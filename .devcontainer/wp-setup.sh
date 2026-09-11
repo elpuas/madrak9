@@ -14,7 +14,7 @@ DB_NAME='wordpress'
 DB_USER='wp_user'
 DB_PASS='wp_pass'
 DB_SOCKET='/run/mysqld/mysqld.sock'
-SITE_URL='http://localhost:8000'
+SITE_URL='http://localhost:8300'
 SHOULD_IMPORT_SQL=false
 DEVDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 REPO_ROOT="$(cd "$DEVDIR/.." >/dev/null 2>&1 && pwd)"
@@ -71,14 +71,14 @@ ensure_wp_content_link() {
 }
 
 configure_apache() {
-	echo 'Configuring Apache for port 8000...'
+	echo 'Configuring Apache for port 8300...'
 
-	if ! grep -q '^Listen 8000$' /etc/apache2/ports.conf; then
-		echo 'Listen 8000' | sudo tee -a /etc/apache2/ports.conf >/dev/null
+	if ! grep -q '^Listen 8300$' /etc/apache2/ports.conf; then
+		echo 'Listen 8300' | sudo tee -a /etc/apache2/ports.conf >/dev/null
 	fi
 
-	sudo tee /etc/apache2/sites-available/wordpress-8000.conf >/dev/null <<'EOF'
-<VirtualHost *:8000>
+	sudo tee /etc/apache2/sites-available/wordpress-8300.conf >/dev/null <<'EOF'
+<VirtualHost *:8300>
 	ServerName localhost
 	DocumentRoot /var/www/html
 	DirectoryIndex index.php
@@ -94,7 +94,7 @@ configure_apache() {
 </VirtualHost>
 EOF
 
-	sudo a2ensite wordpress-8000 >/dev/null 2>&1
+	sudo a2ensite wordpress-8300 >/dev/null 2>&1
 }
 
 reset_wordpress() {

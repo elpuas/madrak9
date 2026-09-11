@@ -11,14 +11,14 @@ sudo service apache2 start >/dev/null 2>&1 || sudo service apache2 restart >/dev
 
 sudo service apache2 reload >/dev/null 2>&1 || sudo service apache2 restart >/dev/null 2>&1
 
-if curl -fsS --connect-timeout 5 http://localhost:8000 >/dev/null; then
+if curl -fsS --connect-timeout 5 http://localhost:8300 >/dev/null; then
 	echo 'WordPress is ready.'
-	echo 'Site: http://localhost:8000'
-	echo 'Admin: http://localhost:8000/wp-admin'
+	echo 'Site: http://localhost:8300'
+	echo 'Admin: http://localhost:8300/wp-admin'
 	echo 'Username: admin'
 	echo 'Password: password'
 else
-	echo 'WordPress did not respond on http://localhost:8000.'
+	echo 'WordPress did not respond on http://localhost:8300.'
 	echo 'Check Apache logs with: sudo tail -20 /var/log/apache2/error.log'
 	exit 1
 fi

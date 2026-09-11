@@ -32,7 +32,7 @@ The running WordPress root is `/var/www/html`. The repository is mounted at `/wo
 2. starts Apache
 3. runs [.devcontainer/wp-setup.sh](/Users/alfredonavas/WORDPRESS/epdc-base/.devcontainer/wp-setup.sh)
 4. reloads Apache
-5. verifies that `http://localhost:8000` responds
+5. verifies that `http://localhost:8300` responds
 
 ## Bootstrap Flow
 
@@ -40,7 +40,7 @@ The running WordPress root is `/var/www/html`. The repository is mounted at `/wo
 
 1. confirms WordPress core exists in `/var/www/html`
 2. replaces the image’s default `wp-content` directory with a symlink to the mounted repository root
-3. configures Apache to listen on port `8000`
+3. configures Apache to listen on port `8300`
 4. waits for MariaDB readiness instead of using a fixed sleep
 5. creates `wp-config.php` only when needed
 6. installs WordPress only on first run
@@ -49,7 +49,7 @@ The running WordPress root is `/var/www/html`. The repository is mounted at `/wo
 
 ## Runtime Defaults
 
-- Site URL: `http://localhost:8000`
+- Site URL: `http://localhost:8300`
 - Admin username: `admin`
 - Admin password: `password`
 - Database name: `wordpress`

@@ -32,11 +32,11 @@ WordPress core is provided inside the Dev Container and is not committed to this
 2. Open the folder in VS Code.
 3. Run `Dev Containers: Reopen in Container`.
 4. Wait for the post-start setup to finish.
-5. Open [http://localhost:8000](http://localhost:8000).
+5. Open [http://localhost:8300](http://localhost:8300).
 
 Default local credentials:
 
-- Admin URL: `http://localhost:8000/wp-admin`
+- Admin URL: `http://localhost:8300/wp-admin`
 - Username: `admin`
 - Password: `password`
 
