@@ -155,3 +155,84 @@ The agent must never:
 - Install global packages.
 - Introduce new tooling without approval.
 - Change project structure.
+
+--------------------------------------------------
+SECTION 7 — MadraK9 Ecommerce Context
+--------------------------------------------------
+
+- MadraK9 is a WooCommerce store for canine products: training equipment, collars, leashes, harnesses, protective equipment, rewards, grooming products, detection and working-dog equipment, food, supplements, and related accessories.
+- The catalog is migrating from SpecialK9. Prioritize reliable catalog architecture; accurate product and variation data; product discovery; mobile usability; WCAG 2.1 AA; performance; image optimization; and secure, maintainable code.
+- The local WordPress site is `http://localhost:8300`; wp-admin is `http://localhost:8300/wp-admin`.
+- WordPress core runs at `/var/www/html`; this repository is its linked `wp-content` directory.
+- The Dev Container is defined in `.devcontainer/devcontainer.json`; `.devcontainer/start-wp.sh` starts services; `.devcontainer/wp-setup.sh` bootstraps WordPress; `plugins/` is Composer-managed; `themes/epdc-base/` is the active block theme; its source is `themes/epdc-base/src/`; `src/` is the `EPDC\\` PSR-4 root when present.
+- Official WordPress skills are project-local in `.agents/skills/` for Codex discovery and `.codex/skills/` for the WordPress skillpack layout. Source: `https://github.com/WordPress/agent-skills`, commit `d87ee6916e740c7960b6959220c0481a41b320c7`.
+
+--------------------------------------------------
+SECTION 8 — Safe Working Agreement
+--------------------------------------------------
+
+- Inspect `AGENTS.md`, `git status`, relevant configuration, and affected implementation before changing code.
+- Preserve unrelated working-tree changes. Do not revert, reformat, stage, or include them in a commit.
+- Audit the current implementation and data paths before broad changes, dependency changes, migrations, performance work, or bulk operations. Prefer the smallest safe change.
+- Never commit, push, deploy, release, reset an environment, or import the complete catalog without explicit user approval.
+- Do not import products or modify WordPress content during setup, code review, or validation.
+- Migration tooling must have immutable source input, source identifiers, idempotency, dry-run support, observability, a small test fixture/sample import, validation, and rollback/cleanup guidance before a full catalog import is proposed.
+- Keep credentials, API keys, browser profiles, exports, and tokens out of tracked files. Use environment variables or the supported authentication flow.
+
+--------------------------------------------------
+SECTION 9 — Commands and Validation
+--------------------------------------------------
+
+Run these inside the Dev Container from the repository root unless stated otherwise:
+
+```bash
+curl -fsS http://localhost:8300
+wp core version --path=/var/www/html
+wp plugin list --path=/var/www/html
+wp theme list --path=/var/www/html
+composer install
+composer dump-autoload
+composer run lint
+composer run stan
+composer run test
+cd themes/epdc-base
+npm run build
+codex mcp list
+```
+
+- `composer run fix` changes files; use it only for intentional, in-scope PHP edits.
+- WP-CLI commands that write data, including imports, database operations, cache flushing, and plugin/theme activation, require explicit task authorization.
+- Source lint, static analysis, or a build does not prove rendered WordPress or WooCommerce behavior. Perform source validation and rendered browser validation.
+
+--------------------------------------------------
+SECTION 10 — Browser Tool Responsibilities
+--------------------------------------------------
+
+- Playwright MCP: repeatable flows, screenshots, responsive/mobile testing, accessibility-oriented interaction checks, and end-to-end validation.
+- Chrome DevTools MCP: browser console errors, network requests, runtime inspection, and performance diagnostics.
+- Figma MCP: inspect supplied design context, components, variables, and layout before Figma-based implementation. Figma authentication is user-scoped and must not be stored in this repository.
+- Validate customer-facing changes in a real browser at desktop and mobile widths. Check keyboard access, visible focus, semantic heading order, labels and errors, image alt text, critical console/network errors, and affected cart/checkout behavior.
+
+--------------------------------------------------
+SECTION 11 — WooCommerce Catalog and Migration
+--------------------------------------------------
+
+- Use WooCommerce product types and CRUD/data APIs. Keep product, variation, stock, backorder, price, tax, and visibility data in WooCommerce's supported model; do not create parallel product storage.
+- Use global product attributes and WooCommerce taxonomies for shared, filterable dimensions. Preserve source-to-destination mappings for categories, brands, attributes, and related products.
+- Treat each variation as a complete sellable record when applicable: stable SKU, selected attribute values, pricing, stock status and quantity, backorder policy, image, weight/dimensions, and source identifier.
+- Migration tooling must use a known test dataset and no full-catalog import occurs without explicit approval.
+- Validate post-import counts, duplicate SKUs, variation parent/attribute consistency, stock and backorder values, image attachment resolution, category/brand mappings, and related-product links. Record discrepancies rather than guessing.
+- Design categories, navigation, search, filters, breadcrumbs, empty states, and product cards for product discovery and mobile use without compromising accessible names, focus order, or keyboard operation.
+
+--------------------------------------------------
+SECTION 12 — Quality, Accessibility, and Security
+--------------------------------------------------
+
+- Follow WPCS, `phpcs.xml`, PHP 8.0+ compatible syntax, namespaces where appropriate, WordPress hooks and APIs, and WooCommerce CRUD/data APIs.
+- Use strict types in new standalone PHP files when compatible with WordPress entry points and project conventions.
+- Sanitize and validate input, verify nonces, check capabilities, escape output by context, and use prepared statements for necessary `$wpdb` queries.
+- Use WordPress i18n, enqueue APIs, debug logging that excludes customer data and secrets, and idempotent/observable WP-Cron jobs with a manual run path.
+- Write modern JavaScript with `const` and `let`; do not use `var`; use `@wordpress/scripts` tooling.
+- Meet WCAG 2.1 AA with semantic native controls, keyboard operation, visible focus, associated labels and errors, meaningful alternative text, sufficient contrast, and no color-only status.
+- Build mobile-first. Use appropriately sized, responsive images and measure before and after performance changes.
+- Never trust client-provided product, price, inventory, order, or privileged action data.
