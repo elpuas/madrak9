@@ -21,7 +21,7 @@ function epdc_base_setup() {
 	add_theme_support( 'responsive-embeds' );
 
 	// Add editor styles
-	add_editor_style( 'build/editor-style.css' );
+	add_editor_style( 'build/index.css' );
 }
 add_action( 'after_setup_theme', 'epdc_base_setup' );
 

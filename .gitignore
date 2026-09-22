@@ -28,7 +28,6 @@ Thumbs.db
 .idea/
 
 # Composer lockfile (template repo)
-/composer.lock
 
 # Local caches
 /.phpunit.result.cache

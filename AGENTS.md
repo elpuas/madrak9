@@ -236,3 +236,95 @@ SECTION 12 — Quality, Accessibility, and Security
 - Meet WCAG 2.1 AA with semantic native controls, keyboard operation, visible focus, associated labels and errors, meaningful alternative text, sufficient contrast, and no color-only status.
 - Build mobile-first. Use appropriately sized, responsive images and measure before and after performance changes.
 - Never trust client-provided product, price, inventory, order, or privileged action data.
+
+--------------------------------------------------
+SECTION 13 — Staging Deployment Scope
+--------------------------------------------------
+
+- This repository is a `wp-content` source tree, not a complete WordPress installation.
+- The approved staging site is `https://staging2.madrak9.com`.
+- The staging WordPress root is `/home/customer/www/staging2.madrak9.com/public_html`.
+- The staging deployment destination is `/home/customer/www/staging2.madrak9.com/public_html/wp-content`.
+- The repository root maps directly to that remote `wp-content` directory only after a clean deployment artifact has been created.
+- Production is outside the authorized deployment scope.
+- Preserve unrelated working-tree changes in all deployment preparation work.
+
+--------------------------------------------------
+SECTION 14 — Deployment Toolchain and Theme Build
+--------------------------------------------------
+
+- Use PHP 8.3, Composer 2, Node.js 20, and npm for deployment preparation.
+- The theme npm lockfile is `themes/epdc-base/package-lock.json`.
+- Install theme dependencies with:
+
+```bash
+cd themes/epdc-base && npm ci
+```
+
+- Build production theme assets with:
+
+```bash
+cd themes/epdc-base && npm run build
+```
+
+- The generated theme build directory is `themes/epdc-base/build/`; it is not tracked and must be produced in CI.
+- Verify required runtime build outputs after every build, including `themes/epdc-base/build/index.css`, the editor stylesheet referenced by the theme.
+
+--------------------------------------------------
+SECTION 15 — Composer Plugins and Runtime Dependencies
+--------------------------------------------------
+
+- Manage WordPress plugins through root Composer. Composer installs WordPress plugins into `plugins/{$name}/`.
+- Install production Composer dependencies with:
+
+```bash
+composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader
+```
+
+- WooCommerce 11.1.0 is installed through Composer.
+- Current production Composer packages are AI, Create Block Theme, Performance Lab, Query Monitor, and WooCommerce. Do not change a package's dependency classification without explicit authorization.
+- No private Composer repository or required repository-level Composer authentication is currently configured.
+- Root `vendor/` is not a runtime deployment path. Plugin-owned `vendor/` directories and packaged plugin `build/` directories can be runtime requirements and must be retained.
+- There are currently no MU plugins.
+
+--------------------------------------------------
+SECTION 16 — Deployment Artifact Requirements
+--------------------------------------------------
+
+- CI must export the approved Git commit to a temporary source directory, install production Composer dependencies, run `npm ci` and the production theme build, verify required theme build outputs, and copy only allowlisted runtime files into a separate artifact directory.
+- Validate the artifact before synchronization. Use the artifact, never the repository working tree, as the rsync source.
+- Runtime deployment paths are:
+  - `index.php`
+  - `plugins/**`
+  - `themes/epdc-base/functions.php`
+  - `themes/epdc-base/style.css`
+  - `themes/epdc-base/theme.json`
+  - `themes/epdc-base/screenshot.png`
+  - `themes/epdc-base/parts/**`
+  - `themes/epdc-base/templates/**`
+  - `themes/epdc-base/styles/**`
+  - `themes/epdc-base/build/**`
+- The deployment artifact must exclude Git metadata; `.agents/`; `.codex/`; `.devcontainer/`; `.github/`; root `vendor/`; `src/`; tests; documentation; `uploads/`; `upgrade/`; theme source and `node_modules`; package and Composer manifests not required at runtime; development and WP-CLI configuration; `AGENTS.md`; README and Dev Container documentation; source maps; logs; CSV and SQL files; backups and archives; environment files; authentication files; private keys; and certificates.
+- Do not use broad `**/vendor/**` or `**/build/**` exclusions: plugin-owned vendor and packaged build directories may be runtime dependencies.
+- Do not deploy WordPress core, databases, `wp-config.php`, uploads, credentials, catalog CSVs, backups, caches, or local development artifacts.
+- Recheck the completed artifact for symlinks before every deployment.
+- Run and review `rsync --dry-run` before every first or materially changed deployment.
+- Do not use `rsync --delete` unless Alfredo explicitly authorizes a reviewed deletion policy. Preserve unmanaged remote content and `uploads/`.
+- The staging workflow triggers on pushes to `staging` and by manual dispatch. It uses the GitHub `staging` environment.
+- `STAGING_DEPLOY_ENABLED` must remain `false` by default. The workflow always performs the dry-run and performs real rsync only when that environment variable is exactly `true`.
+
+--------------------------------------------------
+SECTION 17 — Deployment and Catalog Operations
+--------------------------------------------------
+
+- Code deployment and WooCommerce catalog import are separate operations. Catalog imports must never run automatically during a code deployment.
+- Staging currently contains a clean/default WordPress installation. WooCommerce must be deployed, activated, and verified before catalog import.
+- Production access, deployment, DNS changes, database replacement, catalog import, and payment activation each require separate explicit authorization.
+
+--------------------------------------------------
+SECTION 18 — Unresolved Deployment Decisions
+--------------------------------------------------
+
+- Root `composer.lock` is intentionally no longer ignored and must be included in the CI/CD commit. Do not regenerate it without explicit dependency-change authorization.
+- Confirm whether Create Block Theme, Performance Lab, and Query Monitor should remain production Composer dependencies.
+- The remote-deletion policy remains undecided. Initial deployments must not use `--delete`.
