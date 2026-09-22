@@ -160,7 +160,7 @@ jobs:
             -p "$STAGING_SSH_PORT"
           )
           printf -v rsync_ssh '%q ' ssh "${ssh_options[@]}"
-          rsync -az --itemize-changes --dry-run \
+          rsync -az --itemize-changes --chmod=D755,F644 --dry-run \
             -e "$rsync_ssh" \
             "${ARTIFACT_DIR}/" \
             "${STAGING_SSH_USER}@${STAGING_SSH_HOST}:${STAGING_DEPLOY_PATH%/}/"
@@ -186,7 +186,7 @@ jobs:
             -p "$STAGING_SSH_PORT"
           )
           printf -v rsync_ssh '%q ' ssh "${ssh_options[@]}"
-          rsync -az --itemize-changes \
+          rsync -az --itemize-changes --chmod=D755,F644 \
             -e "$rsync_ssh" \
             "${ARTIFACT_DIR}/" \
             "${STAGING_SSH_USER}@${STAGING_SSH_HOST}:${STAGING_DEPLOY_PATH%/}/"

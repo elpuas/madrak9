@@ -308,6 +308,7 @@ SECTION 16 — Deployment Artifact Requirements
 - Do not use broad `**/vendor/**` or `**/build/**` exclusions: plugin-owned vendor and packaged build directories may be runtime dependencies.
 - Do not deploy WordPress core, databases, `wp-config.php`, uploads, credentials, catalog CSVs, backups, caches, or local development artifacts.
 - Recheck the completed artifact for symlinks before every deployment.
+- Normalize only the completed artifact before synchronization: directories must be `0755` and regular files `0644`. Both staging rsync preview and real transfer must use `--chmod=D755,F644`; do not use this policy on SSH material, uploads, WordPress core, `wp-config.php`, or unmanaged remote paths.
 - Run and review `rsync --dry-run` before every first or materially changed deployment.
 - Do not use `rsync --delete` unless Alfredo explicitly authorizes a reviewed deletion policy. Preserve unmanaged remote content and `uploads/`.
 - The staging workflow triggers on pushes to `staging` and by manual dispatch. It uses the GitHub `staging` environment.

@@ -2,6 +2,9 @@
 
 set -euo pipefail
 
+# Keep artifact paths web-readable and traversable; SSH material is handled separately.
+umask 022
+
 if [[ "$#" -ne 2 ]]; then
 	printf 'Usage: %s <source-directory> <empty-artifact-directory>\n' "$0" >&2
 	exit 64
@@ -30,6 +33,8 @@ if [[ -e "$artifact_dir" ]]; then
 else
 	mkdir -p "$artifact_dir"
 fi
+
+chmod 755 "$artifact_dir"
 
 required_source_files=(
 	index.php
@@ -72,6 +77,11 @@ done
 find "$artifact_dir" -type f \( -name "*.map" -o -name "*.log" -o -name "*.csv" -o -name "*.sql" -o -name "*.bak" -o -name "*.backup" -o -name "*.zip" -o -name "*.tar" -o -name "*.tar.gz" -o -name ".env" -o -name ".env.*" -o -name "auth.json" -o -name "*.pem" -o -name "*.key" -o -name "*.crt" -o -name "*.p12" -o -name "id_rsa" -o -name "id_ed25519" \) -delete
 find "$artifact_dir/plugins" -type d \( -name ".git" -o -name ".github" -o -name "node_modules" -o -name "test" -o -name "tests" -o -name "doc" -o -name "docs" \) -prune -exec rm -rf -- {} +
 
+# Normalize only the clean artifact. This keeps the deployed wp-content tree
+# web-readable without touching uploads, WordPress core, or SSH material.
+find "$artifact_dir" -type d -exec chmod 755 {} +
+find "$artifact_dir" -type f -exec chmod 644 {} +
+
 if [[ ! -d "$artifact_dir/plugins/woocommerce" ]]; then
 	echo 'Artifact is missing plugins/woocommerce/.' >&2
 	exit 1
@@ -100,6 +110,16 @@ done
 
 if find "$artifact_dir" -type l -print -quit | grep -q .; then
 	echo 'Artifact contains symlinks.' >&2
+	exit 1
+fi
+
+if find "$artifact_dir" -type d ! -perm 0755 -print -quit | grep -q .; then
+	echo 'Artifact contains a directory that is not mode 755.' >&2
+	exit 1
+fi
+
+if find "$artifact_dir" -type f ! -perm 0644 -print -quit | grep -q .; then
+	echo 'Artifact contains a regular file that is not mode 644.' >&2
 	exit 1
 fi
 
