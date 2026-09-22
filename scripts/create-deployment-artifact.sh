@@ -40,7 +40,7 @@ required_source_files=(
 	themes/epdc-base/build/index.js
 	themes/epdc-base/build/index.asset.php
 	themes/epdc-base/build/style-index.css
-	themes/epdc-base/build/editor-style.css
+	themes/epdc-base/build/index.css
 )
 
 for required_source_file in "${required_source_files[@]}"; do

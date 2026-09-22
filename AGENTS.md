@@ -268,7 +268,7 @@ cd themes/epdc-base && npm run build
 ```
 
 - The generated theme build directory is `themes/epdc-base/build/`; it is not tracked and must be produced in CI.
-- Verify required runtime build outputs after every build, including the editor stylesheet referenced by the theme.
+- Verify required runtime build outputs after every build, including `themes/epdc-base/build/index.css`, the editor stylesheet referenced by the theme.
 
 --------------------------------------------------
 SECTION 15 — Composer Plugins and Runtime Dependencies
