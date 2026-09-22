@@ -1,0 +1,232 @@
+name: Deploy staging
+
+on:
+  push:
+    branches:
+      - staging
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: staging-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy staging artifact
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    environment:
+      name: staging
+    env:
+      STAGING_SSH_HOST: ${{ vars.STAGING_SSH_HOST }}
+      STAGING_SSH_USER: ${{ vars.STAGING_SSH_USER }}
+      STAGING_SSH_PORT: ${{ vars.STAGING_SSH_PORT }}
+      STAGING_DEPLOY_PATH: ${{ vars.STAGING_DEPLOY_PATH }}
+      STAGING_URL: ${{ vars.STAGING_URL }}
+      STAGING_DEPLOY_ENABLED: ${{ vars.STAGING_DEPLOY_ENABLED }}
+
+    steps:
+      - name: Check out the exact triggering commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Set up PHP and Composer
+        uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # 2.37.1
+        with:
+          php-version: '8.3'
+          tools: composer:v2
+          coverage: none
+
+      - name: Set up Node.js
+        uses: actions/setup-node@0a44ba7841725637a19e28fa30b79a866c81b0a6 # v4.0.4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: themes/epdc-base/package-lock.json
+
+      - name: Validate staging configuration
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for variable_name in \
+            STAGING_SSH_HOST \
+            STAGING_SSH_USER \
+            STAGING_SSH_PORT \
+            STAGING_DEPLOY_PATH \
+            STAGING_URL \
+            STAGING_DEPLOY_ENABLED; do
+            if [[ -z "${!variable_name}" ]]; then
+              echo "::error::Required staging variable ${variable_name} is not configured."
+              exit 1
+            fi
+          done
+
+          if [[ ! "$STAGING_SSH_PORT" =~ ^[0-9]+$ ]]; then
+            echo '::error::STAGING_SSH_PORT must be numeric.'
+            exit 1
+          fi
+
+          if [[ "$STAGING_DEPLOY_PATH" != /* || "$STAGING_DEPLOY_PATH" != */wp-content ]]; then
+            echo '::error::STAGING_DEPLOY_PATH must be an absolute wp-content directory.'
+            exit 1
+          fi
+
+          if [[ ! -f composer.lock ]]; then
+            echo '::error::composer.lock is required for reproducible builds.'
+            exit 1
+          fi
+
+      - name: Validate Composer lockfile
+        run: composer validate --no-check-publish --check-lock
+
+      - name: Install production dependencies and build theme
+        shell: bash
+        run: |
+          set -euo pipefail
+          composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader
+          cd themes/epdc-base
+          npm ci
+          npm run build
+
+      - name: Verify required theme build outputs
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          required_files=(
+            themes/epdc-base/build/index.js
+            themes/epdc-base/build/index.asset.php
+            themes/epdc-base/build/style-index.css
+            themes/epdc-base/build/editor-style.css
+          )
+
+          for required_file in "${required_files[@]}"; do
+            if [[ ! -f "$required_file" ]]; then
+              echo "::error file=${required_file}::Required theme runtime asset is missing."
+              exit 1
+            fi
+          done
+
+      - name: Create and validate clean deployment artifact
+        id: artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          artifact_dir="$(mktemp -d "${RUNNER_TEMP}/madrak9-staging-artifact.XXXXXX")"
+          scripts/create-deployment-artifact.sh "$GITHUB_WORKSPACE" "$artifact_dir"
+          echo "artifact_dir=${artifact_dir}" >> "$GITHUB_OUTPUT"
+
+      - name: Write temporary SSH material
+        id: ssh-material
+        shell: bash
+        env:
+          STAGING_SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
+          STAGING_KNOWN_HOSTS: ${{ vars.STAGING_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "$STAGING_SSH_KEY" || -z "$STAGING_KNOWN_HOSTS" ]]; then
+            echo '::error::STAGING_SSH_KEY and STAGING_KNOWN_HOSTS must be configured.'
+            exit 1
+          fi
+
+          ssh_dir="$(mktemp -d "${RUNNER_TEMP}/madrak9-staging-ssh.XXXXXX")"
+          key_file="${ssh_dir}/id_ed25519"
+          known_hosts_file="${ssh_dir}/known_hosts"
+          umask 077
+          printf '%s\n' "$STAGING_SSH_KEY" > "$key_file"
+          printf '%s\n' "$STAGING_KNOWN_HOSTS" > "$known_hosts_file"
+          chmod 600 "$key_file" "$known_hosts_file"
+          unset STAGING_SSH_KEY STAGING_KNOWN_HOSTS
+          echo "key_file=${key_file}" >> "$GITHUB_OUTPUT"
+          echo "known_hosts_file=${known_hosts_file}" >> "$GITHUB_OUTPUT"
+
+      - name: Preview staging synchronization
+        shell: bash
+        env:
+          ARTIFACT_DIR: ${{ steps.artifact.outputs.artifact_dir }}
+          SSH_KEY_FILE: ${{ steps.ssh-material.outputs.key_file }}
+          SSH_KNOWN_HOSTS_FILE: ${{ steps.ssh-material.outputs.known_hosts_file }}
+        run: |
+          set -euo pipefail
+          ssh_options=(
+            -i "$SSH_KEY_FILE"
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_FILE"
+            -o StrictHostKeyChecking=yes
+            -o IdentitiesOnly=yes
+            -p "$STAGING_SSH_PORT"
+          )
+          printf -v rsync_ssh '%q ' ssh "${ssh_options[@]}"
+          rsync -az --itemize-changes --dry-run \
+            -e "$rsync_ssh" \
+            "${ARTIFACT_DIR}/" \
+            "${STAGING_SSH_USER}@${STAGING_SSH_HOST}:${STAGING_DEPLOY_PATH%/}/"
+
+      - name: Report disabled deployment
+        if: ${{ vars.STAGING_DEPLOY_ENABLED != 'true' }}
+        run: echo 'Staging deployment is disabled; dry-run completed and no files were transferred.'
+
+      - name: Synchronize staging artifact
+        if: ${{ vars.STAGING_DEPLOY_ENABLED == 'true' }}
+        shell: bash
+        env:
+          ARTIFACT_DIR: ${{ steps.artifact.outputs.artifact_dir }}
+          SSH_KEY_FILE: ${{ steps.ssh-material.outputs.key_file }}
+          SSH_KNOWN_HOSTS_FILE: ${{ steps.ssh-material.outputs.known_hosts_file }}
+        run: |
+          set -euo pipefail
+          ssh_options=(
+            -i "$SSH_KEY_FILE"
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_FILE"
+            -o StrictHostKeyChecking=yes
+            -o IdentitiesOnly=yes
+            -p "$STAGING_SSH_PORT"
+          )
+          printf -v rsync_ssh '%q ' ssh "${ssh_options[@]}"
+          rsync -az --itemize-changes \
+            -e "$rsync_ssh" \
+            "${ARTIFACT_DIR}/" \
+            "${STAGING_SSH_USER}@${STAGING_SSH_HOST}:${STAGING_DEPLOY_PATH%/}/"
+
+      - name: Verify deployed staging site
+        if: ${{ vars.STAGING_DEPLOY_ENABLED == 'true' }}
+        shell: bash
+        env:
+          SSH_KEY_FILE: ${{ steps.ssh-material.outputs.key_file }}
+          SSH_KNOWN_HOSTS_FILE: ${{ steps.ssh-material.outputs.known_hosts_file }}
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error --location --max-time 30 --output /dev/null "$STAGING_URL"
+          wp_root="${STAGING_DEPLOY_PATH%/wp-content}"
+          ssh_options=(
+            -i "$SSH_KEY_FILE"
+            -o "UserKnownHostsFile=$SSH_KNOWN_HOSTS_FILE"
+            -o StrictHostKeyChecking=yes
+            -o IdentitiesOnly=yes
+            -p "$STAGING_SSH_PORT"
+          )
+          printf -v remote_command 'test -d %q; printf "WordPress version: "; wp --path=%q --skip-plugins --skip-themes core version; if test -f %q; then printf "WooCommerce files: present\\n"; else printf "WooCommerce files: absent\\n"; fi' \
+            "$STAGING_DEPLOY_PATH" \
+            "$wp_root" \
+            "${STAGING_DEPLOY_PATH%/}/plugins/woocommerce/woocommerce.php"
+          ssh "${ssh_options[@]}" "${STAGING_SSH_USER}@${STAGING_SSH_HOST}" "$remote_command"
+
+      - name: Remove temporary SSH material
+        if: ${{ always() }}
+        shell: bash
+        env:
+          SSH_KEY_FILE: ${{ steps.ssh-material.outputs.key_file }}
+          SSH_KNOWN_HOSTS_FILE: ${{ steps.ssh-material.outputs.known_hosts_file }}
+        run: |
+          set -euo pipefail
+          for temporary_file in "${SSH_KEY_FILE:-}" "${SSH_KNOWN_HOSTS_FILE:-}"; do
+            if [[ -n "$temporary_file" ]]; then
+              rm -f -- "$temporary_file"
+            fi
+          done
+          if [[ -n "${SSH_KEY_FILE:-}" ]]; then
+            rmdir -- "$(dirname "$SSH_KEY_FILE")" 2>/dev/null || true
+          fi
