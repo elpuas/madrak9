@@ -322,9 +322,18 @@
 							"fontDisplay": "swap",
 							"fontFamily": "Barlow",
 							"fontStyle": "normal",
-							"fontWeight": "100 900",
+							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/barlow/BarlowGX.ttf"
+								"file:./assets/fonts/barlow/Barlow-Regular-latin.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Barlow",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/barlow/Barlow-SemiBold-latin.woff2"
 							]
 						}
 					]
@@ -787,7 +796,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--primary)",
+					"fontFamily": "Montserrat, Arial, sans-serif",
 					"fontWeight": "600",
 					"lineHeight": "var(--wp--custom--line-height--body)"
 				}
@@ -810,7 +819,7 @@
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--barlow)",
 			"fontSize": "var(--wp--preset--font-size--base)",
-			"fontWeight": "430",
+			"fontWeight": "400",
 			"lineHeight": "var(--wp--custom--line-height--body)"
 		}
 	},
