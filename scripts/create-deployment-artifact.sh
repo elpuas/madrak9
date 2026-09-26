@@ -53,7 +53,7 @@ for required_source_file in "${required_source_files[@]}"; do
 	fi
 done
 
-for required_source_directory in plugins themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/styles themes/epdc-base/build themes/ollie; do
+for required_source_directory in plugins themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/build themes/ollie; do
 	if [[ ! -d "$source_dir/$required_source_directory" ]]; then
 		echo "Required deployment source directory is missing: $required_source_directory" >&2
 		exit 1
@@ -69,9 +69,13 @@ for theme_file in functions.php style.css theme.json screenshot.png; do
 	cp -a "$source_dir/themes/epdc-base/$theme_file" "$artifact_dir/themes/epdc-base/"
 done
 
-for theme_directory in parts templates styles build; do
+for theme_directory in parts templates build; do
 	cp -a "$source_dir/themes/epdc-base/$theme_directory" "$artifact_dir/themes/epdc-base/"
 done
+
+if [[ -d "$source_dir/themes/epdc-base/styles" ]]; then
+	cp -a "$source_dir/themes/epdc-base/styles" "$artifact_dir/themes/epdc-base/"
+fi
 
 find "$artifact_dir" -type f \( -name "*.map" -o -name "*.log" -o -name "*.csv" -o -name "*.sql" -o -name "*.bak" -o -name "*.backup" -o -name "*.zip" -o -name "*.tar" -o -name "*.tar.gz" -o -name ".env" -o -name ".env.*" -o -name "auth.json" -o -name "*.pem" -o -name "*.key" -o -name "*.crt" -o -name "*.p12" -o -name "id_rsa" -o -name "id_ed25519" \) -delete
 find "$artifact_dir/plugins" -type d \( -name ".git" -o -name ".github" -o -name "node_modules" -o -name "test" -o -name "tests" -o -name "doc" -o -name "docs" \) -prune -exec rm -rf -- {} +
