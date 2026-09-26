@@ -134,59 +134,59 @@
 			],
 			"palette": [
 				{
-					"name": "Brand",
+					"name": "Copper",
 					"slug": "primary",
-					"color": "#5344F4"
+					"color": "#C56A2D"
 				},
 				{
-					"name": "Brand Accent",
+					"name": "Warm Sand",
 					"slug": "primary-accent",
-					"color": "#e9e7ff"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Brand Alt",
+					"name": "Deep Olive",
 					"slug": "primary-alt",
-					"color": "#DEC9FF"
+					"color": "#364127"
 				},
 				{
-					"name": "Brand Alt Accent",
+					"name": "Warm Sand",
 					"slug": "primary-alt-accent",
-					"color": "#3d386b"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Contrast",
+					"name": "Black",
 					"slug": "main",
-					"color": "#1E1E26"
+					"color": "#0B0B0B"
 				},
 				{
-					"name": "Contrast Accent",
+					"name": "Warm Sand",
 					"slug": "main-accent",
-					"color": "#d4d4ec"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Base",
+					"name": "Warm Sand",
 					"slug": "base",
-					"color": "#fff"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Base Accent",
+					"name": "Deep Olive",
 					"slug": "secondary",
-					"color": "#545473"
+					"color": "#364127"
 				},
 				{
-					"name": "Tint",
+					"name": "Warm Sand",
 					"slug": "tertiary",
-					"color": "#f8f7fc"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Border Base",
+					"name": "Warm Sand",
 					"slug": "border-light",
-					"color": "#E3E3F0"
+					"color": "#E8D9C8"
 				},
 				{
-					"name": "Border Contrast",
+					"name": "Deep Olive",
 					"slug": "border-dark",
-					"color": "#4E4E60"
+					"color": "#364127"
 				}
 			],
 			"link": true
@@ -319,19 +319,14 @@
 			"writingMode": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Mona Sans, sans-serif",
-					"name": "Mona Sans",
-					"slug": "primary",
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans",
-							"fontStretch": "75% 125%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [ "file:./assets/fonts/mona-sans/Mona-Sans.woff2"]
-						}
-					]
+					"fontFamily": "Montserrat, Arial, sans-serif",
+					"name": "Montserrat",
+					"slug": "primary"
+				},
+				{
+					"fontFamily": "Barlow, Arial, sans-serif",
+					"name": "Barlow",
+					"slug": "barlow"
 				},
 				{
 					"fontFamily": "Mona Sans Expanded, sans-serif",

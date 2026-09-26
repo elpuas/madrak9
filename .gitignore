@@ -1,5 +1,6 @@
 # Dependencies
 /vendor/
+/themes/ollie/
 **/node_modules/
 
 # Third-party plugins and uploads (managed separately)
