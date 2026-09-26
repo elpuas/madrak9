@@ -158,29 +158,9 @@
 					"slug": "primary"
 				},
 				{
-					"color": "#E8D9C8",
-					"name": "Warm Sand",
-					"slug": "primary-accent"
-				},
-				{
-					"color": "#364127",
-					"name": "Deep Olive",
-					"slug": "primary-alt"
-				},
-				{
-					"color": "#E8D9C8",
-					"name": "Warm Sand",
-					"slug": "primary-alt-accent"
-				},
-				{
 					"color": "#0B0B0B",
 					"name": "Black",
 					"slug": "main"
-				},
-				{
-					"color": "#E8D9C8",
-					"name": "Warm Sand",
-					"slug": "main-accent"
 				},
 				{
 					"color": "#E8D9C8",
@@ -191,21 +171,6 @@
 					"color": "#364127",
 					"name": "Deep Olive",
 					"slug": "secondary"
-				},
-				{
-					"color": "#E8D9C8",
-					"name": "Warm Sand",
-					"slug": "tertiary"
-				},
-				{
-					"color": "#E8D9C8",
-					"name": "Warm Sand",
-					"slug": "border-light"
-				},
-				{
-					"color": "#364127",
-					"name": "Deep Olive",
-					"slug": "border-dark"
 				}
 			]
 		},
@@ -335,63 +300,34 @@
 				{
 					"fontFamily": "Montserrat, Arial, sans-serif",
 					"name": "Montserrat",
-					"slug": "primary"
+					"slug": "primary",
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Montserrat",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/montserrat/Montserrat-Variable-latin.woff2"
+							]
+						}
+					]
 				},
 				{
 					"fontFamily": "Barlow, Arial, sans-serif",
 					"name": "Barlow",
-					"slug": "barlow"
-				},
-				{
+					"slug": "barlow",
 					"fontFace": [
 						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Expanded",
-							"fontStretch": "125%",
+							"fontDisplay": "swap",
+							"fontFamily": "Barlow",
 							"fontStyle": "normal",
-							"fontWeight": "300 900",
+							"fontWeight": "100 900",
 							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
+								"file:./assets/fonts/barlow/BarlowGX.ttf"
 							]
 						}
-					],
-					"fontFamily": "Mona Sans Expanded, sans-serif",
-					"name": "Mona Sans Expanded",
-					"slug": "expanded"
-				},
-				{
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Condensed",
-							"fontStretch": "94%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
-						}
-					],
-					"fontFamily": "Mona Sans Condensed, sans-serif",
-					"name": "Mona Sans Condensed",
-					"slug": "condensed"
-				},
-				{
-					"fontFace": [
-						{
-							"fontDisplay": "block",
-							"fontFamily": "Mona Sans Narrow",
-							"fontStretch": "75%",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/mona-sans/Mona-Sans.woff2"
-							]
-						}
-					],
-					"fontFamily": "Mona Sans Narrow, sans-serif",
-					"name": "Mona Sans Narrow",
-					"slug": "narrow"
+					]
 				},
 				{
 					"fontFamily": "monospace",
@@ -476,7 +412,7 @@
 					"width": "0px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--tertiary)",
+					"background": "var(--wp--preset--color--base)",
 					"text": "var(--wp--preset--color--main)"
 				},
 				"spacing": {
@@ -488,7 +424,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--monospace))",
+					"fontFamily": "var(--wp--preset--font-family--monospace)",
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
@@ -611,7 +547,7 @@
 					"radius": "5px"
 				},
 				"color": {
-					"background": "var(--wp--preset--color--tertiary)",
+					"background": "var(--wp--preset--color--base)",
 					"text": "var(--wp--preset--color--main)"
 				},
 				"spacing": {
@@ -623,7 +559,7 @@
 					}
 				},
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--monospace))",
+					"fontFamily": "var(--wp--preset--font-family--monospace)",
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
@@ -872,7 +808,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--primary)",
+			"fontFamily": "var(--wp--preset--font-family--barlow)",
 			"fontSize": "var(--wp--preset--font-size--base)",
 			"fontWeight": "430",
 			"lineHeight": "var(--wp--custom--line-height--body)"
