@@ -1,0 +1,107 @@
+/* Responsive Overrides — Ollie Pro */
+/* Per-side classes ensure only explicitly set sides are overridden. */
+/* Unset sides inherit their desktop value. */
+
+/* === Tablet (max-width: 768px) === */
+@media (max-width: 768px) {
+	.has-ollie-fs-tablet {
+		font-size: var(--ollie-fs-tablet, inherit) !important;
+	}
+
+	.has-ollie-padding-top-tablet { padding-top: var(--ollie-padding-top-tablet) !important; }
+	.has-ollie-padding-right-tablet { padding-right: var(--ollie-padding-right-tablet) !important; }
+	.has-ollie-padding-bottom-tablet { padding-bottom: var(--ollie-padding-bottom-tablet) !important; }
+	.has-ollie-padding-left-tablet { padding-left: var(--ollie-padding-left-tablet) !important; }
+
+	.has-ollie-margin-top-tablet { margin-top: var(--ollie-margin-top-tablet) !important; }
+	.has-ollie-margin-right-tablet { margin-right: var(--ollie-margin-right-tablet) !important; }
+	.has-ollie-margin-bottom-tablet { margin-bottom: var(--ollie-margin-bottom-tablet) !important; }
+	.has-ollie-margin-left-tablet { margin-left: var(--ollie-margin-left-tablet) !important; }
+
+	/* Block gap — flex/grid use gap, flow/constrained use margin-block-start on children */
+	.has-ollie-gap-tablet.is-layout-flex,
+	.has-ollie-gap-tablet.is-layout-grid {
+		gap: var(--ollie-gap-tablet) !important;
+	}
+	.has-ollie-gap-tablet.is-layout-flow > *,
+	.has-ollie-gap-tablet.is-layout-constrained > * {
+		margin-block-start: var(--ollie-gap-tablet) !important;
+	}
+	.has-ollie-gap-tablet.is-layout-flow > :first-child,
+	.has-ollie-gap-tablet.is-layout-constrained > :first-child {
+		margin-block-start: 0 !important;
+	}
+
+	.has-ollie-mh-tablet { min-height: var(--ollie-mh-tablet) !important; }
+	.has-ollie-ta-tablet { text-align: var(--ollie-ta-tablet) !important; }
+	/* Justification: when orientation is NOT changed responsively, use desktop .is-vertical */
+	.has-ollie-jc-tablet:not(.has-ollie-ori-tablet):not(.is-vertical) { justify-content: var(--ollie-jc-tablet) !important; }
+	.has-ollie-jc-tablet:not(.has-ollie-ori-tablet).is-vertical { align-items: var(--ollie-jc-tablet) !important; }
+	/* When orientation IS changed responsively, use the orientation-specific class */
+	.has-ollie-jc-tablet.ollie-ori-tablet-row { justify-content: var(--ollie-jc-tablet) !important; }
+	.has-ollie-jc-tablet.ollie-ori-tablet-column { align-items: var(--ollie-jc-tablet) !important; }
+	.has-ollie-ori-tablet { flex-direction: var(--ollie-ori-tablet) !important; }
+}
+
+/* === Mobile (max-width: 480px) === */
+@media (max-width: 480px) {
+	.has-ollie-fs-mobile {
+		font-size: var(--ollie-fs-mobile, inherit) !important;
+	}
+
+	.has-ollie-padding-top-mobile { padding-top: var(--ollie-padding-top-mobile) !important; }
+	.has-ollie-padding-right-mobile { padding-right: var(--ollie-padding-right-mobile) !important; }
+	.has-ollie-padding-bottom-mobile { padding-bottom: var(--ollie-padding-bottom-mobile) !important; }
+	.has-ollie-padding-left-mobile { padding-left: var(--ollie-padding-left-mobile) !important; }
+
+	.has-ollie-margin-top-mobile { margin-top: var(--ollie-margin-top-mobile) !important; }
+	.has-ollie-margin-right-mobile { margin-right: var(--ollie-margin-right-mobile) !important; }
+	.has-ollie-margin-bottom-mobile { margin-bottom: var(--ollie-margin-bottom-mobile) !important; }
+	.has-ollie-margin-left-mobile { margin-left: var(--ollie-margin-left-mobile) !important; }
+
+	/* Block gap — flex/grid use gap, flow/constrained use margin-block-start on children */
+	.has-ollie-gap-mobile.is-layout-flex,
+	.has-ollie-gap-mobile.is-layout-grid {
+		gap: var(--ollie-gap-mobile) !important;
+	}
+	.has-ollie-gap-mobile.is-layout-flow > *,
+	.has-ollie-gap-mobile.is-layout-constrained > * {
+		margin-block-start: var(--ollie-gap-mobile) !important;
+	}
+	.has-ollie-gap-mobile.is-layout-flow > :first-child,
+	.has-ollie-gap-mobile.is-layout-constrained > :first-child {
+		margin-block-start: 0 !important;
+	}
+
+	.has-ollie-mh-mobile { min-height: var(--ollie-mh-mobile) !important; }
+	.has-ollie-ta-mobile { text-align: var(--ollie-ta-mobile) !important; }
+	/* Justification: when orientation is NOT changed responsively, use desktop .is-vertical */
+	.has-ollie-jc-mobile:not(.has-ollie-ori-mobile):not(.has-ollie-ori-tablet):not(.is-vertical) { justify-content: var(--ollie-jc-mobile) !important; }
+	.has-ollie-jc-mobile:not(.has-ollie-ori-mobile):not(.has-ollie-ori-tablet).is-vertical { align-items: var(--ollie-jc-mobile) !important; }
+	/* When orientation IS changed responsively (mobile-specific or cascaded from tablet) */
+	.has-ollie-jc-mobile.ollie-ori-mobile-row { justify-content: var(--ollie-jc-mobile) !important; }
+	.has-ollie-jc-mobile.ollie-ori-mobile-column { align-items: var(--ollie-jc-mobile) !important; }
+	/* Cascade: if only tablet orientation was set, use it for mobile too */
+	.has-ollie-jc-mobile:not(.has-ollie-ori-mobile).ollie-ori-tablet-row { justify-content: var(--ollie-jc-mobile) !important; }
+	.has-ollie-jc-mobile:not(.has-ollie-ori-mobile).ollie-ori-tablet-column { align-items: var(--ollie-jc-mobile) !important; }
+	.has-ollie-ori-mobile { flex-direction: var(--ollie-ori-mobile) !important; }
+}
+
+/* === Max Width === */
+/* Desktop: applies at all viewport sizes when --ollie-mw-desktop is set. */
+/* Tablet and mobile use var() fallbacks to cascade from wider breakpoints. */
+.has-ollie-mw {
+	max-width: var(--ollie-mw-desktop);
+}
+
+@media (max-width: 768px) {
+	.has-ollie-mw {
+		max-width: var(--ollie-mw-tablet, var(--ollie-mw-desktop));
+	}
+}
+
+@media (max-width: 480px) {
+	.has-ollie-mw {
+		max-width: var(--ollie-mw-mobile, var(--ollie-mw-tablet, var(--ollie-mw-desktop)));
+	}
+}

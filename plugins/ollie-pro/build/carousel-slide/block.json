@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/slide",
+  "version": "1.0.0",
+  "title": "Slide",
+  "category": "design",
+  "description": "A single slide within a carousel.",
+  "parent": [
+    "ollie/carousel-slides"
+  ],
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "blockGap": true
+      }
+    },
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "constrained"
+      }
+    }
+  },
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "example": {
+    "innerBlocks": [
+      {
+        "name": "core/paragraph",
+        "attributes": {
+          "content": "Slide content"
+        }
+      }
+    ]
+  }
+}
