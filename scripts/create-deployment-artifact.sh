@@ -41,6 +41,11 @@ required_source_files=(
 	themes/epdc-base/build/index.asset.php
 	themes/epdc-base/build/style-index.css
 	themes/epdc-base/build/index.css
+	themes/epdc-base/assets/fonts/montserrat/Montserrat-Variable-latin.woff2
+	themes/epdc-base/assets/fonts/barlow/Barlow-Regular-latin.woff2
+	themes/epdc-base/assets/fonts/barlow/Barlow-SemiBold-latin.woff2
+	plugins/ollie-pro/ollie-pro.php
+	plugins/ollie-pro/build/carousel/index.js
 	themes/ollie/functions.php
 	themes/ollie/style.css
 	themes/ollie/theme.json
@@ -53,7 +58,7 @@ for required_source_file in "${required_source_files[@]}"; do
 	fi
 done
 
-for required_source_directory in plugins themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/build themes/ollie; do
+for required_source_directory in plugins plugins/ollie-pro themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/build themes/epdc-base/assets themes/ollie; do
 	if [[ ! -d "$source_dir/$required_source_directory" ]]; then
 		echo "Required deployment source directory is missing: $required_source_directory" >&2
 		exit 1
@@ -69,7 +74,7 @@ for theme_file in functions.php style.css theme.json screenshot.png; do
 	cp -a "$source_dir/themes/epdc-base/$theme_file" "$artifact_dir/themes/epdc-base/"
 done
 
-for theme_directory in parts templates build; do
+for theme_directory in parts templates build assets; do
 	cp -a "$source_dir/themes/epdc-base/$theme_directory" "$artifact_dir/themes/epdc-base/"
 done
 
