@@ -16,8 +16,9 @@
 		"wpackagist-plugin/ai": "^1.3",
 		"wpackagist-plugin/create-block-theme": "^2.10",
 		"wpackagist-plugin/performance-lab": "^4.2",
-		"wpackagist-plugin/query-monitor": "^3.14",
-		"wpackagist-plugin/woocommerce": "^11.1"
+		"wpackagist-plugin/query-monitor": "^4.0.7",
+		"wpackagist-plugin/woocommerce": "^11.1",
+		"wpackagist-theme/ollie": "*"
 	},
 
 	"require-dev": {
@@ -36,6 +37,9 @@
 
 	"extra": {
 		"installer-paths": {
+			"themes/{$name}/": [
+				"type:wordpress-theme"
+			],
 			"plugins/{$name}/": [
 				"type:wordpress-plugin"
 			]

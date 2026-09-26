@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/writing-prompt",
+  "title": "Writing Prompt",
+  "category": "widgets",
+  "description": "Describe what you need and generate fresh content with AI.",
+  "keywords": [
+    "ai",
+    "writing",
+    "compose",
+    "generate",
+    "prompt",
+    "ollie"
+  ],
+  "version": "1.0.0",
+  "supports": {
+    "html": false,
+    "inserter": true
+  },
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

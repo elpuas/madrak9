@@ -1,0 +1,121 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/carousel",
+  "version": "1.0.0",
+  "title": "Carousel",
+  "category": "design",
+  "description": "Display a carousel using any blocks as slides.",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "spacing": {
+          "blockGap": "var:preset|spacing|small"
+        }
+      }
+    },
+    "centerNav": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "providesContext": {
+    "ollie/carousel/centerNav": "centerNav"
+  },
+  "supports": {
+    "align": [
+      "wide",
+      "full"
+    ],
+    "html": false,
+    "anchor": true,
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": {
+        "__experimentalDefault": "var:preset|spacing|small"
+      },
+      "__experimentalDefaultControls": {
+        "padding": true,
+        "blockGap": true
+      }
+    },
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": true,
+      "allowEditing": true,
+      "default": {
+        "type": "constrained"
+      }
+    }
+  },
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "example": {
+    "attributes": {
+      "align": "wide"
+    },
+    "innerBlocks": [
+      {
+        "name": "ollie/carousel-slides",
+        "attributes": {
+          "slidesPerView": 2
+        },
+        "innerBlocks": [
+          {
+            "name": "ollie/slide",
+            "innerBlocks": [
+              {
+                "name": "core/paragraph",
+                "attributes": {
+                  "content": "Slide one"
+                }
+              }
+            ]
+          },
+          {
+            "name": "ollie/slide",
+            "innerBlocks": [
+              {
+                "name": "core/paragraph",
+                "attributes": {
+                  "content": "Slide two"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ollie/carousel-nav",
+        "attributes": {
+          "navType": "dots",
+          "justifyContent": "center"
+        }
+      }
+    ]
+  }
+}

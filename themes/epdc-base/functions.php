@@ -20,8 +20,9 @@ function epdc_base_setup() {
 	add_theme_support( 'editor-styles' );
 	add_theme_support( 'responsive-embeds' );
 
-	// Add editor styles
-	add_editor_style( 'build/index.css' );
+	if ( file_exists( get_stylesheet_directory() . '/build/index.css' ) ) {
+		add_editor_style( 'build/index.css' );
+	}
 }
 add_action( 'after_setup_theme', 'epdc_base_setup' );
 
@@ -30,17 +31,19 @@ add_action( 'after_setup_theme', 'epdc_base_setup' );
  */
 function epdc_base_enqueue_assets() {
 	$theme_version = wp_get_theme()->get( 'Version' );
-	$build_path = get_template_directory() . '/build/';
-	$build_url = get_template_directory_uri() . '/build/';
+	$build_path = get_stylesheet_directory() . '/build/';
+	$build_url = get_stylesheet_directory_uri() . '/build/';
 
 	// Enqueue main stylesheet if it exists
 	if ( file_exists( $build_path . 'style-index.css' ) ) {
-		$style_dependencies = [];
+		$style_dependencies = [ 'ollie' ];
 
 		// Check for asset file with dependencies
 		if ( file_exists( $build_path . 'style-index.asset.php' ) ) {
 			$style_assets = include $build_path . 'style-index.asset.php';
-			$style_dependencies = $style_assets['dependencies'] ?? [];
+			$style_dependencies = array_unique(
+				array_merge( $style_dependencies, $style_assets['dependencies'] ?? [] )
+			);
 			$theme_version = $style_assets['version'] ?? $theme_version;
 		}
 
@@ -72,4 +75,4 @@ function epdc_base_enqueue_assets() {
 		);
 	}
 }
-add_action( 'wp_enqueue_scripts', 'epdc_base_enqueue_assets' );
+add_action( 'wp_enqueue_scripts', 'epdc_base_enqueue_assets', 20 );

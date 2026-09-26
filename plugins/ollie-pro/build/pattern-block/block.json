@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/pattern-block",
+  "title": "Ollie Pattern Block",
+  "category": "widgets",
+  "description": "A powerful pattern inserter",
+  "keywords": [
+    "pattern",
+    "template",
+    "ollie"
+  ],
+  "version": "1.0.0",
+  "attributes": {
+    "initialCategory": {
+      "type": "string"
+    },
+    "replaceClientId": {
+      "type": "string"
+    }
+  },
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.scss"
+}
