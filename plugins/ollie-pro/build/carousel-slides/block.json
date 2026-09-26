@@ -1,0 +1,147 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/carousel-slides",
+  "version": "1.0.0",
+  "title": "Carousel Slides",
+  "category": "design",
+  "description": "Container for carousel slides.",
+  "parent": [
+    "ollie/carousel"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "sourceType": {
+      "type": "string",
+      "default": "static"
+    },
+    "query": {
+      "type": "object",
+      "default": {
+        "postType": "post",
+        "perPage": 6,
+        "offset": 0,
+        "order": "desc",
+        "orderBy": "date",
+        "sticky": "",
+        "taxQuery": {},
+        "author": "",
+        "search": "",
+        "excludeCurrent": false
+      }
+    },
+    "slidesPerView": {
+      "type": "number",
+      "default": 3
+    },
+    "slidesPerGroup": {
+      "type": "number",
+      "default": 1
+    },
+    "slideMaxWidth": {
+      "type": "number"
+    },
+    "slideMinWidth": {
+      "type": "number",
+      "default": 250
+    },
+    "speed": {
+      "type": "number",
+      "default": 300
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoplaySpeed": {
+      "type": "number",
+      "default": 3000
+    },
+    "autoplayStyle": {
+      "type": "string",
+      "default": "slide"
+    },
+    "scrollSpeed": {
+      "type": "number",
+      "default": 2
+    },
+    "pauseOnMouseEnter": {
+      "type": "boolean",
+      "default": false
+    },
+    "fade": {
+      "type": "boolean",
+      "default": false
+    },
+    "overflowVisible": {
+      "type": "boolean",
+      "default": false
+    },
+    "fadeOut": {
+      "type": "boolean",
+      "default": false
+    },
+    "fadeOutEdges": {
+      "type": "string",
+      "default": "both"
+    },
+    "dragCursor": {
+      "type": "boolean",
+      "default": false
+    },
+    "wheelGestures": {
+      "type": "boolean",
+      "default": false
+    },
+    "freeScroll": {
+      "type": "boolean",
+      "default": false
+    },
+    "rtl": {
+      "type": "boolean"
+    },
+    "tabletSlidesPerView": {
+      "type": "number"
+    },
+    "tabletSlidesPerGroup": {
+      "type": "number"
+    },
+    "mobileSlidesPerView": {
+      "type": "number"
+    },
+    "mobileSlidesPerGroup": {
+      "type": "number"
+    },
+    "smartSync": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "inserter": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": false,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    }
+  },
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,2100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ollie Pro\n"
+"POT-Creation-Date: 2025-06-09 20:19+0200\n"
+"PO-Revision-Date: 2025-06-29 11:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ollie-pro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: inc/plugin-update-checker/vendor\n"
+"X-Poedit-SearchPathExcluded-2: inc/onboarding/node_modules\n"
+"X-Poedit-SearchPathExcluded-3: node_modules\n"
+
+#: build/pattern-block/index.js:9080 build/pattern-block/index.js:9724
+msgid "Pattern Actions"
+msgstr "パターンアクション"
+
+#: build/pattern-block/index.js:9087
+msgid "Insert on current page"
+msgstr "現在のページに挿入"
+
+#: build/pattern-block/index.js:9095
+msgid "Insert Pattern"
+msgstr "パターンの挿入"
+
+#: build/pattern-block/index.js:9103
+msgid "Insert dynamic pattern"
+msgstr "ダイナミックパターンの挿入"
+
+#: build/pattern-block/index.js:9111
+msgid "Insert Dynamic Pattern"
+msgstr "ダイナミックパターンの挿入"
+
+#: build/pattern-block/index.js:9119
+msgid "Copy pattern blocks"
+msgstr "パターンブロックのコピー"
+
+#: build/pattern-block/index.js:9134
+msgid "Download pattern to theme"
+msgstr "パターンをテーマにダウンロード"
+
+#: build/pattern-block/index.js:9136
+msgid ""
+"Download the pattern to your theme's pattern library to edit and customize"
+msgstr ""
+"パターンをテーマのパターンライブラリにダウンロードして、編集およびカスタマイ"
+"ズします"
+
+#: build/pattern-block/index.js:9148
+msgid ""
+"Heads up, this will remove the pattern file from your theme. If you've "
+"customized the pattern, the changes will be lost."
+msgstr ""
+"注意点として、これによりテーマからパターンファイルが削除されます。パターンを"
+"カスタマイズした場合、変更は失われます。"
+
+#: build/pattern-block/index.js:9155
+msgid "Remove Pattern"
+msgstr "パターンを削除"
+
+#: build/pattern-block/index.js:9155
+msgid "Download Pattern"
+msgstr "ダウンロードパターン"
+
+#: build/pattern-block/index.js:9163 build/pattern-block/index.js:10514
+msgid "Remove from favorites"
+msgstr "お気に入りから削除"
+
+#: build/pattern-block/index.js:9171 build/pattern-block/index.js:9754
+msgid "Remove from Favorites"
+msgstr "お気に入りから外す"
+
+#: build/pattern-block/index.js:9179
+msgid "Add To Favorites"
+msgstr "お気に入り追加"
+
+#: build/pattern-block/index.js:9187 build/pattern-block/index.js:9759
+msgid "Add to Favorites"
+msgstr "お気に入りに追加"
+
+#: build/pattern-block/index.js:9355
+msgid "Previous"
+msgstr "前へ"
+
+#: build/pattern-block/index.js:9422
+msgid "Next"
+msgstr "次へ"
+
+#: build/pattern-block/index.js:9464
+msgid "No patterns found."
+msgstr "パターンが見つかりませんでした。"
+
+#: build/pattern-block/index.js:9483
+msgid "Showing"
+msgstr "表示中"
+
+#: build/pattern-block/index.js:9483
+msgid "of"
+msgstr "の"
+
+#: build/pattern-block/index.js:9496
+msgid "Per page:"
+msgstr "ページごと:"
+
+#: build/pattern-block/index.js:9664
+msgid "Ollie Pattern Preview"
+msgstr "オーリーパターンプレビュー"
+
+#: build/pattern-block/index.js:9693 build/pattern-block/index.js:9734
+msgid "Pattern Details"
+msgstr "パターンの詳細"
+
+#: build/pattern-block/index.js:9707
+msgid "Added to favorites"
+msgstr "お気に入りに追加しました"
+
+#: build/pattern-block/index.js:9714
+msgid "Added to theme"
+msgstr "テーマに追加されました"
+
+#: build/pattern-block/index.js:9739
+msgid "Insert Into Page"
+msgstr "ページへの挿入"
+
+#: build/pattern-block/index.js:9744
+msgid "Remove from Theme"
+msgstr "テーマから削除"
+
+#: build/pattern-block/index.js:9749
+msgid "Add To Theme"
+msgstr "テーマに追加"
+
+#: build/pattern-block/index.js:9797
+msgid ""
+"Browse the patterns available in Ollie pattern library and download them to "
+"your site."
+msgstr ""
+"Ollieパターンライブラリで利用可能なパターンを閲覧し、サイトにダウンロードしま"
+"す。"
+
+#: build/pattern-block/index.js:9798
+msgid "Ollie Pattern Library"
+msgstr "オリーパターンライブラリ"
+
+#: build/pattern-block/index.js:9808
+msgid "Open Ollie Pattern Library"
+msgstr "Ollieパターンライブラリを開く"
+
+#: build/pattern-block/index.js:9958 build/pattern-block/index.js:9998
+#: build/pattern-block/index.js:10012 inc/onboarding/build/index.js:24892
+msgid "Go Back"
+msgstr "前に戻る"
+
+#: build/pattern-block/index.js:9980
+msgid "This collection uses the"
+msgstr "このコレクションでは、"
+
+#: build/pattern-block/index.js:9980
+msgid "style variation in the Ollie theme."
+msgstr "オリーのテーマのスタイルバリエーション。"
+
+#: build/pattern-block/index.js:9984
+msgid "Learn about style variations"
+msgstr "スタイルのバリエーションについて学ぶ"
+
+#: build/pattern-block/index.js:10051 build/pattern-block/index.js:10098
+msgid "Pattern Categories"
+msgstr "パターンカテゴリ"
+
+#: build/pattern-block/index.js:10078
+msgid "Pattern Collections"
+msgstr "パターンコレクション"
+
+#: build/pattern-block/index.js:10171
+msgid "Preview mobile design"
+msgstr "モバイルデザインのプレビュー"
+
+#: build/pattern-block/index.js:10172
+msgid "Mobile"
+msgstr "携帯電話"
+
+#: build/pattern-block/index.js:10183
+msgid "Preview tablet design"
+msgstr "タブレットのデザインをプレビュー"
+
+#: build/pattern-block/index.js:10184
+msgid "Tablet"
+msgstr "タブレット"
+
+#: build/pattern-block/index.js:10195
+msgid "Preview desktop design"
+msgstr "デスクトップ デザインのプレビュー"
+
+#: build/pattern-block/index.js:10196
+msgid "Desktop"
+msgstr "デスクトップ"
+
+#: build/pattern-block/index.js:10304 build/pattern-block/index.js:10422
+#: build/pattern-block/index.js:10442
+msgid "Search patterns"
+msgstr "パターンを検索する"
+
+#: build/pattern-block/index.js:10413 build/pattern-block/index.js:10418
+msgid "Search in"
+msgstr "検索"
+
+#: build/pattern-block/index.js:10458
+msgid "Loading..."
+msgstr "読み込み中…"
+
+#: build/pattern-block/index.js:10471
+msgid "Bulk Edit"
+msgstr "一括編集"
+
+#: build/pattern-block/index.js:10483
+msgid "Add to theme"
+msgstr "テーマに追加"
+
+#: build/pattern-block/index.js:10490
+msgid "Remove from theme"
+msgstr "テーマから削除"
+
+#: build/pattern-block/index.js:10497
+msgid "Insert into current page"
+msgstr "現在のページに挿入"
+
+#: build/pattern-block/index.js:10507
+msgid "Add to favorites"
+msgstr "お気に入りに追加"
+
+#: build/pattern-block/index.js:10523
+msgid "Select All"
+msgstr "すべて選択"
+
+#: build/pattern-block/index.js:10530
+msgid "Deselect"
+msgstr "選択解除"
+
+#: build/pattern-block/index.js:10539
+msgid "Sort By"
+msgstr "並び替え"
+
+#: build/pattern-block/index.js:10547
+msgid "Ascending"
+msgstr "昇順"
+
+#: build/pattern-block/index.js:10552
+msgid "Descending"
+msgstr "降順"
+
+#: build/pattern-block/index.js:10557
+msgid "Latest"
+msgstr "最新"
+
+#: build/pattern-block/index.js:10565
+msgid "Clear sort"
+msgstr "絞り込み解除"
+
+#: build/pattern-block/index.js:10574
+msgid "Filter"
+msgstr "フィルター"
+
+#: build/pattern-block/index.js:10584
+msgid "My Favorites"
+msgstr "お気に入り"
+
+#: build/pattern-block/index.js:10589
+msgid "Downloaded to theme"
+msgstr "テーマにダウンロードしました"
+
+#: build/pattern-block/index.js:10597
+msgid "Clear filter"
+msgstr "フィルターをクリア"
+
+#: build/pattern-block/index.js:10606
+msgid "Grid View"
+msgstr "グリッド表示"
+
+#: build/pattern-block/index.js:10617
+msgid "2 Column"
+msgstr "2列"
+
+#: build/pattern-block/index.js:10623
+msgid "3 Column"
+msgstr "3列"
+
+#: build/pattern-block/index.js:10629
+msgid "4 Column"
+msgstr "4列"
+
+#: inc/class-olpo-helper.php:686
+msgid "You do not have permission to reset templates."
+msgstr "テンプレートをリセットする権限がありません。"
+
+#: inc/class-olpo-helper.php:704
+msgid "Templates reset successfully."
+msgstr "テンプレートは正常にリセットされます。"
+
+#: inc/class-olpo-helper.php:707
+msgid "Failed to reset templates."
+msgstr "テンプレートのリセットに失敗しました。"
+
+#: inc/class-olpo-helper.php:714
+msgid "You do not have permission to reset global styles."
+msgstr "グローバルスタイルをリセットする権限がありません。"
+
+#: inc/class-olpo-helper.php:731
+msgid "Global styles reset successfully."
+msgstr "グローバル スタイルが正常にリセットされました。"
+
+#: inc/class-olpo-helper.php:734
+msgid "Failed to reset global styles."
+msgstr "グローバル スタイルのリセットに失敗しました。"
+
+#: inc/class-olpo-settings.php:50
+msgid "Settings"
+msgstr "設定"
+
+#: inc/class-olpo-settings.php:51
+msgid "Docs"
+msgstr "ドキュメント"
+
+#: inc/class-olpo-settings.php:63 inc/class-olpo-settings.php:64
+#: inc/onboarding/build/index.js:28106
+msgid "Ollie"
+msgstr "Ollie"
+
+#: inc/class-olpo-settings.php:831 inc/class-olpo-settings.php:927
+msgid "Style and type parameters are required"
+msgstr "スタイルとタイプのパラメーターが必要です"
+
+#. translators: %s: Name of the pattern
+#. translators: %s: Name of a pattern
+#: inc/class-olpo-settings.php:847 inc/class-olpo-settings.php:944
+#, php-format
+msgid "Pattern %s not found"
+msgstr "パターン %s が見つかりません"
+
+#. translators: %s: Type to update
+#: inc/class-olpo-settings.php:895
+#, php-format
+msgid "%s updated successfully"
+msgstr "%s は正常に更新されました"
+
+#. translators: %s: the type of the template
+#: inc/class-olpo-settings.php:992
+#, php-format
+msgid "%s template updated successfully"
+msgstr "%s テンプレートが正常に更新されました"
+
+#: inc/class-olpo-settings.php:1020
+msgid "Preview content deleted successfully"
+msgstr "正常に削除されたコンテンツのプレビュー"
+
+#: inc/class-olpo-settings.php:1033
+msgid "Sorry, you are not allowed to do that."
+msgstr "申し訳ありませんが、あなたはそれを行うことはできません。"
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1049
+#, php-format
+msgid "Preview %s already deleted"
+msgstr "プレビュー%sはすでに削除されています"
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1059
+#, php-format
+msgid "Preview %s deleted successfully"
+msgstr "プレビュー%sが正常に削除されました"
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1061
+#, php-format
+msgid "Failed to delete preview %s"
+msgstr "プレビュー%sの削除に失敗しました"
+
+#: inc/class-olpo-settings.php:1166
+msgid "No plugins specified"
+msgstr "プラグインが指定されていません"
+
+#: inc/onboarding/build/index.js:20939
+msgid "Back to WP Admin"
+msgstr "WP 管理者に戻る"
+
+#: inc/onboarding/build/index.js:20979
+msgid "Reset Ollie Settings"
+msgstr "Ollie設定をリセットする"
+
+#: inc/onboarding/build/index.js:20983
+msgid "Reset All Settings"
+msgstr "すべての設定をリセット"
+
+#: inc/onboarding/build/index.js:20991
+msgid ""
+"Reset settings and template customizations to the default theme settings."
+msgstr ""
+"設定とテンプレートのカスタマイズをデフォルトのテーマ設定にリセットします。"
+
+#: inc/onboarding/build/index.js:20999
+msgid "Reset Ollie Styles & Settings"
+msgstr "Ollieのスタイルと設定をリセット"
+
+#: inc/onboarding/build/index.js:21002
+msgid "Reset all style and wizard settings to the default theme styles."
+msgstr ""
+"すべてのスタイルとウィザードの設定をデフォルトのテーマスタイルにリセットしま"
+"す。"
+
+#: inc/onboarding/build/index.js:21011
+msgid "Reset Ollie Templates"
+msgstr "Ollieテンプレートのリセット"
+
+#: inc/onboarding/build/index.js:21014
+msgid "Reset all template customizations to the default theme templates."
+msgstr ""
+"すべてのテンプレートのカスタマイズをデフォルトのテーマテンプレートにリセット"
+"します。"
+
+#: inc/onboarding/build/index.js:21033
+msgid ""
+"Resetting styles and templates should be done with caution if you have "
+"already made significant changes to your site. This cannot be undone."
+msgstr ""
+"スタイルとテンプレートのリセットは、サイトにすでに大幅な変更を加えている場合"
+"は注意して行う必要があります。これは元に戻せません。"
+
+#: inc/onboarding/build/index.js:21042 inc/onboarding/build/index.js:22162
+#: inc/onboarding/build/index.js:24022
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: inc/onboarding/build/index.js:21049
+msgid "Resetting..."
+msgstr "リセットしています…"
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Settings & Templates"
+msgstr "設定とテンプレートのリセット"
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Settings"
+msgstr "設定をリセット"
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Templates"
+msgstr "テンプレートのリセット"
+
+#: inc/onboarding/build/index.js:21049 inc/onboarding/build/index.js:27845
+msgid "Reset"
+msgstr "リセット"
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your settings & templates have been reset"
+msgstr "設定とテンプレートがリセットされました"
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your settings have been reset"
+msgstr "設定がリセットされました"
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your templates have been reset"
+msgstr "テンプレートがリセットされました"
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset both your styles and templates and they are now back to the theme "
+"defaults. Continue to the setup wizard or starter sites to set up your site."
+msgstr ""
+"スタイルとテンプレートの両方がリセットされ、テーマのデフォルトに戻ります。"
+"セットアップ ウィザードまたはスターター サイトに進み、サイトをセットアップし"
+"ます。"
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset your styles and they are now back to the theme defaults. Continue "
+"to the setup wizard or starter sites to set up your site."
+msgstr ""
+"スタイルがリセットされ、テーマのデフォルトに戻ります。セットアップ ウィザード"
+"またはスターター サイトに進み、サイトをセットアップします。"
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset your templates and they are now back to the theme defaults. "
+"Continue to the setup wizard or starter sites to set up your site."
+msgstr ""
+"テンプレートがリセットされ、テーマのデフォルトに戻ります。セットアップ ウィ"
+"ザードまたはスターター サイトに進み、サイトをセットアップします。"
+
+#: inc/onboarding/build/index.js:21086
+msgid "Close"
+msgstr "閉じる"
+
+#: inc/onboarding/build/index.js:21286
+msgid "Play Video"
+msgstr "ビデオ再生"
+
+#: inc/onboarding/build/index.js:21357 inc/onboarding/build/index.js:22709
+msgid "Ollie Pro Dashboard"
+msgstr "Ollie Proダッシュボード"
+
+#: inc/onboarding/build/index.js:21374 inc/onboarding/build/index.js:22405
+#: inc/onboarding/build/index.js:23239
+msgid "Site Setup Wizard"
+msgstr "サイトセットアップウィザード"
+
+#: inc/onboarding/build/index.js:21394 inc/onboarding/build/index.js:22413
+#: inc/onboarding/build/index.js:23263
+msgid "Starter Sites"
+msgstr "スターターサイト"
+
+#: inc/onboarding/build/index.js:21401
+msgid "Create Child Theme"
+msgstr "子テーマの作成"
+
+#: inc/onboarding/build/index.js:21461
+msgid "Install Plugins"
+msgstr "プラグインをインストール"
+
+#: inc/onboarding/build/index.js:21468 inc/onboarding/build/index.js:28144
+msgid "Create Pages"
+msgstr "ページ作成"
+
+#: inc/onboarding/build/index.js:21475
+msgid "Homepage & Blog"
+msgstr "ホームページ&ブログ"
+
+#: inc/onboarding/build/index.js:21492 inc/onboarding/build/index.js:27671
+msgid "Color Palette"
+msgstr "カスタムカラーパレット"
+
+#: inc/onboarding/build/index.js:21509 inc/onboarding/build/index.js:29992
+msgid "Typography"
+msgstr "タイポグラフィ"
+
+#: inc/onboarding/build/index.js:21516 inc/onboarding/build/index.js:29641
+msgid "Page Layout"
+msgstr "ページレイアウト"
+
+#: inc/onboarding/build/index.js:21523
+msgid "Header & Footer"
+msgstr "ヘッダーとフッター"
+
+#: inc/onboarding/build/index.js:21746 inc/onboarding/build/index.js:22421
+#: inc/onboarding/build/index.js:23287 inc/onboarding/build/index.js:23303
+msgid "Create a Child Theme"
+msgstr "新しい子テーマの作成"
+
+#: inc/onboarding/build/index.js:21748
+msgid ""
+"Use this tool to create and activate a child theme based on the Ollie theme."
+msgstr ""
+"このツールを使用して、Ollieテーマに基づいて子テーマを作成およびアクティブ化し"
+"ます。"
+
+#: inc/onboarding/build/index.js:21759
+msgid "Child theme created and activated."
+msgstr "子テーマが作成され、アクティブ化されました。"
+
+#: inc/onboarding/build/index.js:21777 inc/onboarding/build/index.js:21934
+msgid "Theme Name"
+msgstr "テーマ名"
+
+#: inc/onboarding/build/index.js:21797
+msgid "Theme URL"
+msgstr "テーマの URL"
+
+#: inc/onboarding/build/index.js:21820
+msgid "Description"
+msgstr "説明"
+
+#: inc/onboarding/build/index.js:21826
+msgid "A child theme for Ollie."
+msgstr "Ollieの子テーマ"
+
+#: inc/onboarding/build/index.js:21840
+msgid "Author"
+msgstr "投稿者"
+
+#: inc/onboarding/build/index.js:21860
+msgid "Author URL"
+msgstr "制作者 URL"
+
+#: inc/onboarding/build/index.js:21880
+msgid "Version"
+msgstr "バージョン"
+
+#: inc/onboarding/build/index.js:21900
+msgid "Text Domain"
+msgstr "テキストドメイン"
+
+#: inc/onboarding/build/index.js:21942
+msgid "My Ollie Child Theme"
+msgstr "Ollieの子テーマ"
+
+#: inc/onboarding/build/index.js:21945
+msgid "The name of your child theme as it appears in the WordPress admin."
+msgstr "WordPress管理画面に表示される子テーマの名前"
+
+#: inc/onboarding/build/index.js:21954
+msgid "Theme URL (optional)"
+msgstr "テーマ URL (オプション)"
+
+#: inc/onboarding/build/index.js:21965
+msgid "The URL where users can learn more about your theme."
+msgstr "ユーザーがテーマについての詳細URL"
+
+#: inc/onboarding/build/index.js:21974
+msgid "Description (optional)"
+msgstr "説明 (オプション)"
+
+#: inc/onboarding/build/index.js:21981
+msgid "A custom child theme based on Ollie."
+msgstr "Ollieにベースにしたカスタム子テーマ"
+
+#: inc/onboarding/build/index.js:21984
+msgid "A brief description of your child theme."
+msgstr "子テーマの簡単な説明"
+
+#: inc/onboarding/build/index.js:21993
+msgid "Author (optional)"
+msgstr "著者 (オプション)"
+
+#: inc/onboarding/build/index.js:22000
+msgid "Your Name"
+msgstr "名前"
+
+#: inc/onboarding/build/index.js:22003
+msgid "The name of the theme author."
+msgstr "テーマの作成者"
+
+#: inc/onboarding/build/index.js:22012
+msgid "Author URL (optional)"
+msgstr "作成者 URL (オプション)"
+
+#: inc/onboarding/build/index.js:22023
+msgid "The URL of the theme author's website."
+msgstr "テーマ作成者の Web サイトURL。"
+
+#: inc/onboarding/build/index.js:22032
+msgid "Version (optional)"
+msgstr "バージョン (オプション)"
+
+#: inc/onboarding/build/index.js:22042
+msgid "The version number of your child theme."
+msgstr "子テーマのバージョン番号"
+
+#: inc/onboarding/build/index.js:22051
+msgid "Text Domain (optional)"
+msgstr "テキストドメイン (オプション)"
+
+#: inc/onboarding/build/index.js:22061
+msgid "The text domain used for theme translations."
+msgstr "テーマの翻訳に使用されるテキストドメイン"
+
+#: inc/onboarding/build/index.js:22084
+msgid "Create and Activate Child Theme"
+msgstr "子テーマの作成とアクティブ化"
+
+#: inc/onboarding/build/index.js:22096
+msgid "What is a child theme?"
+msgstr "子テーマとは?"
+
+#: inc/onboarding/build/index.js:22099
+msgid ""
+"A child theme is a theme that inherits the functionality and styling of "
+"another theme (the parent theme) while allowing you to make customizations "
+"that won't be lost when the parent theme updates."
+msgstr ""
+"子テーマは、別のテーマ (親テーマ) の機能とスタイルを継承しながら、親テーマの"
+"更新時に失われないカスタマイズを行うことができるテーマです。"
+
+#: inc/onboarding/build/index.js:22107
+msgid "Do I need a child theme?"
+msgstr "子テーマは必要ですか?"
+
+#: inc/onboarding/build/index.js:22110
+msgid ""
+"These days, most users don't need a child theme since many customizations "
+"can be done directly in the block and site editor."
+msgstr ""
+"最近では、多くのカスタマイズをブロックエディターとサイトエディターで直接行う"
+"ことができるため、ほとんどのユーザーは子テーマを必要としません。"
+
+#: inc/onboarding/build/index.js:22118
+msgid "I lost my customizations!"
+msgstr "カスタマイズをなくしてしまいました!"
+
+#: inc/onboarding/build/index.js:22121
+msgid ""
+"Global style changes are tied to your active theme. If you activate a child "
+"theme after making customizations, those changes won't appear. Always "
+"activate your child theme first, then make customizations."
+msgstr ""
+"グローバルスタイルの変更は、アクティブなテーマに関連付けられています。カスタ"
+"マイズ後に子テーマをアクティブ化した場合、それらの変更は表示されません。常に"
+"最初に子テーマをアクティブ化してから、カスタマイズを行います。"
+
+#: inc/onboarding/build/index.js:22129 inc/onboarding/build/index.js:22136
+msgid "Create Block Theme Plugin"
+msgstr "ブロックテーマプラグインを作成"
+
+#: inc/onboarding/build/index.js:22132
+msgid ""
+"If you plan to do extensive work on your child theme, consider installing "
+"the "
+msgstr "子テーマで広範な作業を行う予定の場合は、"
+
+#: inc/onboarding/build/index.js:22137
+msgid ""
+", which helps write site editor and global style changes directly to your "
+"child theme files."
+msgstr ""
+"は、サイトエディターとグローバルスタイルの変更を子テーマファイルに直接書き込"
+"むのに役立ちます。"
+
+#: inc/onboarding/build/index.js:22142
+msgid "Heads up!"
+msgstr "注意!"
+
+#: inc/onboarding/build/index.js:22155
+msgid ""
+"Global style changes (colors, typography, etc.) are tied to your active "
+"theme. If you activate a child theme after making customizations, those "
+"changes won't appear. You will need to activate your previous theme to see "
+"those customizations again."
+msgstr ""
+"グローバルなスタイル変更(色、タイポグラフィなど)は、アクティブなテーマに関連"
+"付けられています。カスタマイズ後に子テーマをアクティブ化した場合、それらの変"
+"更は表示されません。これらのカスタマイズを再度表示するには、以前のテーマをア"
+"クティブ化する必要があります。"
+
+#: inc/onboarding/build/index.js:22169
+msgid "Create and Activate"
+msgstr "作成とアクティブ化"
+
+#: inc/onboarding/build/index.js:22384
+msgid "Theme Studio"
+msgstr "テーマスタジオ"
+
+#: inc/onboarding/build/index.js:22431
+msgid "Theme Studio Docs"
+msgstr "テーマスタジオドキュメント"
+
+#: inc/onboarding/build/index.js:22438
+msgid "Resources"
+msgstr "リソース"
+
+#: inc/onboarding/build/index.js:22448
+msgid "Ollie Docs"
+msgstr "Ollie使い方ガイド"
+
+#: inc/onboarding/build/index.js:22454
+msgid "Ollie Videos"
+msgstr "Ollie使い方ビデオ講座"
+
+#: inc/onboarding/build/index.js:22460
+msgid "Ollie Support"
+msgstr "Ollieサポート"
+
+#: inc/onboarding/build/index.js:22469 inc/onboarding/build/index.js:23126
+msgid "Visit OllieWP.com"
+msgstr "OllieWP.comを見てみる"
+
+#: inc/onboarding/build/index.js:22496
+msgid "Ollie Theme Studio"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22498
+msgid "Use these tools to get your site up and running in just a few minutes."
+msgstr ""
+"これらのツールを使用すると、わずか数分でサイトを稼働させることができます。"
+
+#: inc/onboarding/build/index.js:22514
+msgid "Ollie Docs, Guides, and Videos"
+msgstr "Ollieのドキュメント、ガイド、ビデオ"
+
+#: inc/onboarding/build/index.js:22516
+msgid ""
+"We've put together comprehensive tutorials to help you build faster and "
+"smarter."
+msgstr ""
+"より速く、よりスマートに構築するための包括的なチュートリアルをまとめました。"
+
+#: inc/onboarding/build/index.js:22522
+msgid "Ollie Documentation"
+msgstr "Ollie使い方ガイド"
+
+#: inc/onboarding/build/index.js:22523
+msgid ""
+"Visit the Ollie docs homepage to browse all of the available docs and learn "
+"how to build with block themes."
+msgstr ""
+"Ollie docs のホームページにアクセスして、利用可能なすべてのドキュメントを閲覧"
+"し、ブロックテーマを使用してビルドする方法を学びましょう。"
+
+#: inc/onboarding/build/index.js:22525
+msgid "Browse the Docs"
+msgstr "ドキュメントを参照する"
+
+#: inc/onboarding/build/index.js:22527
+msgid "Ollie Video Library"
+msgstr "Ollieビデオライブラリ"
+
+#: inc/onboarding/build/index.js:22528
+msgid ""
+"Learn how to use the Ollie Pro pattern library, theme studio, and much more "
+"by watching our video tutorials."
+msgstr ""
+"Ollie Proパターンライブラリ、テーマスタジオなどの使用方法を、ビデオチュートリ"
+"アルでご覧ください。"
+
+#: inc/onboarding/build/index.js:22530
+msgid "Watch the Videos"
+msgstr "ビデオを見る"
+
+#: inc/onboarding/build/index.js:22532
+msgid "Get help with Ollie"
+msgstr "Ollie のサポートを受ける"
+
+#: inc/onboarding/build/index.js:22533
+msgid ""
+"Having trouble with your theme or want to report an issue? Submit an issue "
+"through your Ollie Pro account and we'll help out."
+msgstr ""
+"テーマに問題がある、または問題を報告したいですか?Ollie Proアカウントを通じて"
+"問題を送信していただければ、私たちがお手伝いします。"
+
+#: inc/onboarding/build/index.js:22535
+msgid "Get Help with Ollie"
+msgstr "Ollie のヘルプを利用する"
+
+#: inc/onboarding/build/index.js:22606
+msgid "Getting started with Ollie Pro"
+msgstr "Ollie Proの使用を開始する"
+
+#: inc/onboarding/build/index.js:22608
+msgid "Check out the videos below to learn the basics of Ollie Pro."
+msgstr "以下のビデオをチェックして、Ollie Proの基本を学びましょう。"
+
+#: inc/onboarding/build/index.js:22614
+msgid "Close Starter Guide"
+msgstr "スターターガイドを閉じる"
+
+#: inc/onboarding/build/index.js:22624 inc/onboarding/build/index.js:28377
+msgid "Activate Ollie Pro"
+msgstr "OllieProをアクティブ化します"
+
+#: inc/onboarding/build/index.js:22632
+msgid ""
+"Log into your Ollie Pro account to activate Ollie Pro on this site and "
+"unlock the full Ollie Pro pattern library and pro tools."
+msgstr ""
+"Ollie Proアカウントにログインして、このサイトでOllie Proをアクティブ化し、完"
+"全なOllieProパターンライブラリとプロツールのロックを解除します。"
+
+#: inc/onboarding/build/index.js:22637 inc/onboarding/build/index.js:22818
+msgid "Sign in to Ollie Pro"
+msgstr "OllieProにサインインします"
+
+#: inc/onboarding/build/index.js:22642
+msgid "Learn about the site wizard"
+msgstr "サイト ウィザードの詳細"
+
+#: inc/onboarding/build/index.js:22643
+msgid ""
+"The site setup wizard guides you through each step of your site setup "
+"including plugins, pages, typogrpahy, colors, and layouts."
+msgstr ""
+"サイト設定ウィザードは、プラグイン、ページ、タイポグラフ、色、レイアウトな"
+"ど、サイト設定の各ステップをガイドします。"
+
+#: inc/onboarding/build/index.js:22647
+msgid "Learn about starter sites"
+msgstr "スターターサイトについて"
+
+#: inc/onboarding/build/index.js:22648
+msgid ""
+"Starter sites are one-click sites pre-configured with pages, templates, "
+"styles, and plugins to help you launch faster."
+msgstr ""
+"スターターサイトは、ページ、テンプレート、スタイル、プラグインが事前に設定さ"
+"れたワンクリックサイトであり、より迅速に立ち上げることができます。"
+
+#: inc/onboarding/build/index.js:22652
+msgid "Learn about the pattern library"
+msgstr "パターンライブラリの詳細"
+
+#: inc/onboarding/build/index.js:22653
+msgid ""
+"Learn how to use the Ollie Pro pattern library to browse hundreds of pixel-"
+"perfect, responsive patterns and page layouts."
+msgstr ""
+"Ollie Proパターンライブラリを使用して、ピクセルパーフェクトでレスポンシブなパ"
+"ターンとページレイアウトを数百種類閲覧する方法を学びます。"
+
+#: inc/onboarding/build/index.js:22711
+msgid "Design better, build faster, and publish sooner with Ollie"
+msgstr "Ollieでより優れたデザイン、より迅速に構築、より迅速に公開"
+
+#: inc/onboarding/build/index.js:22713
+msgid ""
+"A new era of site building has arrived in WordPress. With the powerful new "
+"site editor, you can build beautiful, blazing-fast websites natively with "
+"WordPress and Ollie — no page builder plugins required."
+msgstr ""
+"WordPressにサイト構築の新時代が到来しました。強力な新しいサイトエディタを使用"
+"すると、WordPressとOllieを使用して、ページビルダープラグインを必要とせずに、"
+"美しく超高速のWebサイトをネイティブに構築できます。"
+
+#: inc/onboarding/build/index.js:22719
+msgid "Sign In to Ollie Pro"
+msgstr "Ollie Proにサインイン"
+
+#: inc/onboarding/build/index.js:22723
+msgid "Get Ollie Pro now"
+msgstr "Ollie Pro を今すぐ入手"
+
+#: inc/onboarding/build/index.js:22798
+msgid "Login successful!"
+msgstr "ログインしました!"
+
+#: inc/onboarding/build/index.js:22821
+msgid "Sign in to unlock the Ollie Pro pattern library and other pro features."
+msgstr ""
+"サインインして、OllieProパターンライブラリとその他のプロ機能のロックを解除し"
+"ます。"
+
+#: inc/onboarding/build/index.js:22827
+msgid "Email"
+msgstr "メールアドレス"
+
+#: inc/onboarding/build/index.js:22836
+msgid "Password"
+msgstr "パスワード"
+
+#: inc/onboarding/build/index.js:22851
+msgid "Sign in"
+msgstr "サインイン"
+
+#: inc/onboarding/build/index.js:22856
+msgid "Forgot Password?"
+msgstr "パスワードをお忘れですか？"
+
+#: inc/onboarding/build/index.js:22995 inc/onboarding/build/index.js:23186
+msgid "Sign In"
+msgstr "サインイン"
+
+#: inc/onboarding/build/index.js:22995
+msgid "My Account"
+msgstr "マイアカウント"
+
+#: inc/onboarding/build/index.js:23014
+msgid "No active subscription found."
+msgstr "有効なサブスクリプションが見つかりませんでした。"
+
+#: inc/onboarding/build/index.js:23016
+msgid "Please renew your subscription to continue using Ollie Pro."
+msgstr ""
+"Ollie Proを引き続き使用するには、サブスクリプションを更新してください。"
+
+#: inc/onboarding/build/index.js:23020 inc/onboarding/build/index.js:23190
+msgid "Get Ollie Pro"
+msgstr "Ollie Proを入手"
+
+#: inc/onboarding/build/index.js:23024 inc/onboarding/build/index.js:23095
+msgid "You are an Ollie Pro!"
+msgstr "あなたはOllie Proメンバーです。"
+
+#: inc/onboarding/build/index.js:23026
+msgid ""
+"Manage your subscription, activations and other account details by visiting "
+"your account area on OllieWP.com."
+msgstr ""
+"サブスクリプション、アクティベーション、その他のアカウントの詳細を管理するに"
+"は、OllieWP.com のアカウントエリアにアクセスしてください。"
+
+#: inc/onboarding/build/index.js:23030
+msgid "Go to your account"
+msgstr "アカウントに移動"
+
+#: inc/onboarding/build/index.js:23098
+msgid "Logged in with"
+msgstr "でログイン"
+
+#: inc/onboarding/build/index.js:23102
+msgid "Log out of Ollie Pro"
+msgstr "OllieProからログアウトします"
+
+#: inc/onboarding/build/index.js:23106
+msgid "The website was deactivated successfully."
+msgstr "ウェブサイトは正常に非アクティブ化されました。"
+
+#: inc/onboarding/build/index.js:23113
+msgid "Deactivate website from Ollie Pro"
+msgstr "OllieProからWebサイトを非アクティブ化する"
+
+#: inc/onboarding/build/index.js:23123
+msgid ""
+"Manage your subscription and other account details by visiting your account "
+"area on OllieWP.com."
+msgstr ""
+"サブスクリプションとその他のアカウントの詳細を管理するには、OllieWP.com のア"
+"カウントエリアにアクセスしてください。"
+
+#: inc/onboarding/build/index.js:23160
+msgid "Unlock these pages with Ollie Pro"
+msgstr "OllieProでこれらのページのロックを解除します"
+
+#: inc/onboarding/build/index.js:23161
+msgid ""
+"Get Ollie Pro to start building with these pixel-perfect pages and hundreds "
+"of responsive patterns."
+msgstr ""
+"Ollie Proを入手して、これらのピクセルパーフェクトなページと何百ものレスポンシ"
+"ブパターンで構築を開始してください。"
+
+#: inc/onboarding/build/index.js:23247
+msgid ""
+"Visit the Ollie site setup wizard to quickly walk through each step of your "
+"site setup including colors, typography, page creation, and more."
+msgstr ""
+"Ollie サイト設定ウィザードにアクセスして、色、タイポグラフィ、ページ作成な"
+"ど、サイト設定の各手順をすばやく説明します。"
+
+#: inc/onboarding/build/index.js:23255
+msgid "Start Site Setup"
+msgstr "サイトのセットアップを開始"
+
+#: inc/onboarding/build/index.js:23271
+msgid ""
+"Ollie starter sites are pre-configured sites that save you a ton of time by "
+"automatically installing plugins, creating pages, and more."
+msgstr ""
+"Ollieスターターサイトは、プラグインを自動的にインストールしたり、ページを作成"
+"したりすることで時間を大幅に節約する事前構成済みのサイトです。"
+
+#: inc/onboarding/build/index.js:23279
+msgid "Import a Starter Site"
+msgstr "スターターサイトのインポート"
+
+#: inc/onboarding/build/index.js:23295
+msgid ""
+"Looking to make code customizations? Use the child theme creator to create "
+"your own child theme where you can safely make changes."
+msgstr ""
+"コードのカスタマイズをお考えですか?子テーマクリエーターを使用して、安全に変更"
+"を加えることができる独自の子テーマを作成します。"
+
+#: inc/onboarding/build/index.js:23778
+msgid "Installed the starter site plugins!"
+msgstr "スターターサイトプラグインをインストールしました!"
+
+#: inc/onboarding/build/index.js:23778
+msgid "Install the starter site plugins"
+msgstr "スターターサイトプラグインをインストールする"
+
+#: inc/onboarding/build/index.js:23790
+msgid "Updated your typography and color palette!"
+msgstr "タイポグラフィとカラーパレットを更新しました!"
+
+#: inc/onboarding/build/index.js:23790 inc/onboarding/build/index.js:23995
+msgid "Update your typography and color palette global styles"
+msgstr "タイポグラフィとカラーパレットのグローバルスタイルを更新する"
+
+#: inc/onboarding/build/index.js:23802
+msgid "Created the starter site pages!"
+msgstr "スターターサイトページを作成しました!"
+
+#: inc/onboarding/build/index.js:23802
+msgid "Create the starter site pages"
+msgstr "スターター サイト ページを作成する"
+
+#: inc/onboarding/build/index.js:23814
+msgid "Updated your templates!"
+msgstr "テンプレートを更新しました!"
+
+#: inc/onboarding/build/index.js:23814 inc/onboarding/build/index.js:23974
+msgid "Update your templates to match the starter site"
+msgstr "スターターサイトに一致するようにテンプレートを更新する"
+
+#: inc/onboarding/build/index.js:23838
+msgid "Ollie Pro Starter Sites"
+msgstr "Ollie Pro スターターサイト"
+
+#: inc/onboarding/build/index.js:23840
+msgid ""
+"Generate an entire pre-made site with pages, typography, colors, and more "
+"with a starter site."
+msgstr ""
+"スターターサイトでは、ページ、タイポグラフィ、色などを含む既成のサイト全体を"
+"生成します。"
+
+#: inc/onboarding/build/index.js:23869
+msgid "Starter Site Intro"
+msgstr "スターターサイト紹介"
+
+#: inc/onboarding/build/index.js:23871
+msgid ""
+"Learn more about Starter Sites and how to use them to quickly create a new "
+"site. "
+msgstr ""
+"スターターサイトの詳細と、スターターサイトを使用して新しいサイトをすばやく作"
+"成する方法をご覧ください。"
+
+#: inc/onboarding/build/index.js:23876 inc/onboarding/build/index.js:30361
+msgid "Watch Video Tutorial"
+msgstr "チュートリアルビデオを見る"
+
+#: inc/onboarding/build/index.js:23899
+msgid "Sign in to import"
+msgstr "サインインしてインポート"
+
+#: inc/onboarding/build/index.js:23899
+msgid "Import"
+msgstr "インポート"
+
+#: inc/onboarding/build/index.js:23899
+msgid "Starter Site"
+msgstr "スターターサイト"
+
+#: inc/onboarding/build/index.js:23904
+msgid "Import Starter Site"
+msgstr "スターターサイトのインポート"
+
+#: inc/onboarding/build/index.js:23912
+msgid ""
+"Importing this starter site will make the following changes to your site:"
+msgstr ""
+"このスターター サイトをインポートすると、サイトに次の変更が加えられます。"
+
+#: inc/onboarding/build/index.js:23932
+msgid "Install the plugins you selected"
+msgstr "選択したプラグインをインストールします"
+
+#: inc/onboarding/build/index.js:23953
+msgid "Create the pages you selected"
+msgstr "選択したページを作成します"
+
+#: inc/onboarding/build/index.js:24014
+msgid ""
+"Please note that this will override existing templates, template parts, and "
+"global styles on your site."
+msgstr ""
+"これにより、サイト上の既存のテンプレート、テンプレート パーツ、およびグローバ"
+"ル スタイルが上書きされることに注意してください。"
+
+#: inc/onboarding/build/index.js:24026
+msgid "Import Site"
+msgstr "サイトのインポート"
+
+#: inc/onboarding/build/index.js:24031
+msgid "We are importing your starter site..."
+msgstr "私たちはあなたのスターターサイトをインポートしています..."
+
+#: inc/onboarding/build/index.js:24057
+msgid "Your site is ready!"
+msgstr "あなたのサイトの準備ができました!"
+
+#: inc/onboarding/build/index.js:24059
+msgid ""
+"Your starter site has been imported successfully. You can now customize your "
+"site in the Site Editor."
+msgstr ""
+"スターターサイトが正常にインポートされました。これで、サイトエディタでサイト"
+"をカスタマイズできます。"
+
+#: inc/onboarding/build/index.js:24070 inc/onboarding/build/index.js:28303
+#: inc/onboarding/build/index.js:28313
+msgid "View Your Site"
+msgstr "あなたのサイトを表示します"
+
+#: inc/onboarding/build/index.js:24073
+msgid "View the front end of your site in a new tab"
+msgstr "サイトのフロントエンドを新しいタブで表示する"
+
+#: inc/onboarding/build/index.js:24081
+msgid "View Site"
+msgstr "サイトの表示"
+
+#: inc/onboarding/build/index.js:24093 inc/onboarding/build/index.js:28328
+msgid "Edit Your Site"
+msgstr "サイトの編集"
+
+#: inc/onboarding/build/index.js:24096
+msgid "Start customizing your site via the Site Editor"
+msgstr "サイトエディタでサイトのカスタマイズを開始します"
+
+#: inc/onboarding/build/index.js:24101
+msgid "Open Site Editor"
+msgstr "サイトエディタを開く"
+
+#: inc/onboarding/build/index.js:24113
+msgid "Edit Header and Footer"
+msgstr "ヘッダーとフッターの編集"
+
+#: inc/onboarding/build/index.js:24116
+msgid "Edit your header and footer via the Site Editor"
+msgstr "サイトエディタでヘッダーとフッターを編集します"
+
+#: inc/onboarding/build/index.js:24121 inc/onboarding/build/index.js:28361
+msgid "Edit Template Parts"
+msgstr "テンプレート パーツの編集"
+
+#: inc/onboarding/build/index.js:24195
+msgid "Unlock this starter site with Ollie Pro"
+msgstr "このスターターサイトのロックを解除するには、Ollie Proをご利用ください"
+
+#: inc/onboarding/build/index.js:24196
+msgid ""
+"Get Ollie Pro to instantly create this a site and start building with "
+"hundreds of responsive patterns."
+msgstr ""
+"Ollie Proを入手して、このサイトをすぐに作成し、何百ものレスポンシブパターンで"
+"構築を開始します。"
+
+#: inc/onboarding/build/index.js:24213
+msgid "View Demo"
+msgstr "デモを見る"
+
+#: inc/onboarding/build/index.js:24217
+#, javascript-format
+msgid "%s Preview"
+msgstr "%s プレビュー"
+
+#: inc/onboarding/build/index.js:24223
+msgid "About this starter site"
+msgstr "このスターターサイトについて"
+
+#: inc/onboarding/build/index.js:24256
+msgid "Starter Site Plugins"
+msgstr "スターターサイトプラグイン"
+
+#: inc/onboarding/build/index.js:24258
+msgid "The following plugins are installed with this starter site:"
+msgstr "次のプラグインは、このスターターサイトと一緒にインストールされます。"
+
+#: inc/onboarding/build/index.js:24279
+msgid "Installed"
+msgstr "インストール済み"
+
+#: inc/onboarding/build/index.js:24311
+msgid "Page Designs"
+msgstr "ページデザイン"
+
+#: inc/onboarding/build/index.js:24313
+msgid "The following pages are included with the starter site:"
+msgstr "スターターサイトには、次のページが含まれています。"
+
+#: inc/onboarding/build/index.js:24330
+#, javascript-format
+msgid "%s preview"
+msgstr "%sプレビュー"
+
+#: inc/onboarding/build/index.js:24861
+msgid "Start Setup"
+msgstr "セットアップを開始"
+
+#: inc/onboarding/build/index.js:24863
+msgid "Install and Continue"
+msgstr "インストールして続行"
+
+#: inc/onboarding/build/index.js:24865
+msgid "Create Pages and Continue"
+msgstr "ページを作成して続行"
+
+#: inc/onboarding/build/index.js:24867
+msgid "Save and Finish"
+msgstr "保存して終了"
+
+#: inc/onboarding/build/index.js:24869
+msgid "Save and Continue"
+msgstr "保存して続行"
+
+#: inc/onboarding/build/index.js:27673
+msgid ""
+"Use one of the carefully-crafted color palettes we've created, or generate "
+"your own below."
+msgstr ""
+"私たちが作成した慎重に作成されたカラーパレットの1つを使用するか、以下で独自の"
+"カラーパレットを生成します。"
+
+#: inc/onboarding/build/index.js:27681
+msgid "Color palette options"
+msgstr "カラー パレット オプション"
+
+#: inc/onboarding/build/index.js:27684
+msgid "Choose a color palette below"
+msgstr "以下のカラーパレットを選択してください"
+
+#: inc/onboarding/build/index.js:27687
+msgid "Generate your own palette"
+msgstr "自分だけのパレットを生成"
+
+#: inc/onboarding/build/index.js:27698
+msgid "Color palettes"
+msgstr "カラーパレット"
+
+#: inc/onboarding/build/index.js:27707
+msgid "Purple"
+msgstr "パープル"
+
+#: inc/onboarding/build/index.js:27720
+msgid "Blue"
+msgstr "青"
+
+#: inc/onboarding/build/index.js:27733
+msgid "Green"
+msgstr "緑"
+
+#: inc/onboarding/build/index.js:27746
+msgid "Orange"
+msgstr "オレンジ"
+
+#: inc/onboarding/build/index.js:27759
+msgid "Pink"
+msgstr "ピンク"
+
+#: inc/onboarding/build/index.js:27772
+msgid "Red"
+msgstr "赤"
+
+#: inc/onboarding/build/index.js:27785
+msgid "Teal"
+msgstr "ティール"
+
+#: inc/onboarding/build/index.js:27798
+msgid "Neon"
+msgstr "ネオン"
+
+#: inc/onboarding/build/index.js:27815
+msgid "Create a color palette"
+msgstr "カラーパレットを作成する"
+
+#: inc/onboarding/build/index.js:27817
+#, fuzzy
+msgid ""
+"Generate a custom color palette based on your brand color using the color "
+"picker."
+msgstr ""
+"カラーピッカーを使用して、ブランドカラーに基づいてカスタムカラーパレットを生"
+"成します。"
+
+#: inc/onboarding/build/index.js:27880
+msgid "This brand color may be tough to read. Try making it a little darker."
+msgstr ""
+"このブランドカラーは読みにくいかもしれません。少し暗くしてみてください。"
+
+#: inc/onboarding/build/index.js:27894 inc/onboarding/build/index.js:28172
+#: inc/onboarding/build/index.js:28678 inc/onboarding/build/index.js:30247
+msgid "Pro Tip"
+msgstr "配色ヒント: "
+
+#: inc/onboarding/build/index.js:27896
+msgid ""
+"You can change adjust your color palette further in the Global Styles panel "
+"of the Site Editor."
+msgstr ""
+"カラーパレットは、サイトエディタのグローバルスタイルパネルでさらに変更できま"
+"す。"
+
+#: inc/onboarding/build/index.js:27908 inc/onboarding/build/index.js:29044
+#: inc/onboarding/build/index.js:30261
+msgid "Preview of your homepage"
+msgstr "ホームページのプレビュー"
+
+#: inc/onboarding/build/index.js:28043
+msgid "Ollie Homepage"
+msgstr "Ollieホームページ"
+
+#: inc/onboarding/build/index.js:28047
+msgid "Ollie Blog"
+msgstr "Ollie ブログ"
+
+#: inc/onboarding/build/index.js:28051
+#, fuzzy
+msgid "Ollie About"
+msgstr "Ollie について"
+
+#: inc/onboarding/build/index.js:28055
+msgid "Ollie Features"
+msgstr "Ollieの特徴"
+
+#: inc/onboarding/build/index.js:28059
+#, fuzzy
+msgid "Ollie Pricing"
+msgstr "Ollieの価格"
+
+#: inc/onboarding/build/index.js:28063
+msgid "Ollie Download"
+msgstr "Ollie をダウンロード"
+
+#: inc/onboarding/build/index.js:28067
+msgid "Ollie Profile"
+msgstr "Ollie プロフィール"
+
+#: inc/onboarding/build/index.js:28109
+msgid "Agency"
+msgstr "エージェンシー"
+
+#: inc/onboarding/build/index.js:28112
+msgid "Creator"
+msgstr "クリエイター"
+
+#: inc/onboarding/build/index.js:28115
+msgid "Startup"
+msgstr "スタートアップ"
+
+#: inc/onboarding/build/index.js:28118
+msgid "Studio"
+msgstr "スタジオ"
+
+#: inc/onboarding/build/index.js:28146
+msgid ""
+"Choose which pages you'd like to create and we'll customize them in the next "
+"steps."
+msgstr "作成するページを選択し、次のステップでカスタマイズします。"
+
+#: inc/onboarding/build/index.js:28174
+msgid ""
+"You can mix and match pages from different collections. Once added to your "
+"site, each page seamlessly adapts to your site's current color and "
+"typography styles."
+msgstr ""
+"異なるコレクションのページを組み合わせて組み合わせることができます。サイトに"
+"追加すると、各ページはサイトの現在の色とタイポグラフィのスタイルにシームレス"
+"に適応します。"
+
+#: inc/onboarding/build/index.js:28289
+msgid "Your site is ready to go!"
+msgstr "あなたのサイトの準備が整いました!"
+
+#: inc/onboarding/build/index.js:28291
+msgid ""
+"You've completed the setup process! Now you can view, edit, and customize "
+"your site using the Site Editor and start building with Ollie and Ollie Pro."
+msgstr ""
+"セットアッププロセスが完了しました。これで、サイトエディタを使用してサイトを"
+"表示、編集、カスタマイズし、OllieとOllie Proで構築を開始できます。"
+
+#: inc/onboarding/build/index.js:28305
+msgid "Open your site to check out the live front-end view."
+msgstr "サイトを開いて、ライブフロントエンドビューを確認します。"
+
+#: inc/onboarding/build/index.js:28330
+msgid ""
+"Go to the Site Editor to view and edit your homepage, navigations, and "
+"customize your site with global styles."
+msgstr ""
+"サイトエディタに移動して、ホームページやナビゲーションを表示および編集し、グ"
+"ローバルスタイルでサイトをカスタマイズします。"
+
+#: inc/onboarding/build/index.js:28337
+msgid "Edit Site"
+msgstr "サイトを編集"
+
+#: inc/onboarding/build/index.js:28352
+msgid "Edit Your Header and Footer"
+msgstr "ヘッダーとフッターの編集"
+
+#: inc/onboarding/build/index.js:28354
+msgid ""
+"Go to the Site Editor to edit your header and footer template parts and site "
+"navigation."
+msgstr ""
+"[サイト エディター] に移動して、ヘッダーとフッターのテンプレート パーツとサイ"
+"ト ナビゲーションを編集します。"
+
+#: inc/onboarding/build/index.js:28379
+msgid ""
+"Visit the dashboard to sign in and unlock the entire Ollie Pro pattern "
+"library."
+msgstr ""
+"ダッシュボードにアクセスしてサインインし、OllieProパターンライブラリ全体の"
+"ロックを解除します。"
+
+#: inc/onboarding/build/index.js:28387
+msgid "Visit Dashboard"
+msgstr "ダッシュボードを見る"
+
+#: inc/onboarding/build/index.js:28403 inc/onboarding/build/index.js:28415
+msgid "View Ollie Docs"
+msgstr "Ollie使い方ガイドを見る"
+
+#: inc/onboarding/build/index.js:28405
+msgid ""
+"Watch tutorial videos and read through the docs to learn how to build "
+"beautiful websites with Ollie."
+msgstr ""
+"Ollieの使い方動画や使い方ガイドを活用して、美しいWebサイトを構築する方法を学"
+"びましょう。"
+
+#: inc/onboarding/build/index.js:28592
+msgid "Header and Footer"
+msgstr "ヘッダーとフッター"
+
+#: inc/onboarding/build/index.js:28594
+msgid ""
+"Choose a design for your header and footer. You can customize further in the "
+"Site Editor."
+msgstr ""
+"ヘッダーとフッターのデザインを選択します。サイトエディタでさらにカスタマイズ"
+"できます。"
+
+#: inc/onboarding/build/index.js:28602
+msgid "Choose your header style"
+msgstr "ヘッダーのスタイルを選択する"
+
+#: inc/onboarding/build/index.js:28606
+msgid "Header With Navs"
+msgstr "ナビゲーション付きヘッダー"
+
+#: inc/onboarding/build/index.js:28609
+msgid "Header With Buttons"
+msgstr "ボタン付きヘッダー"
+
+#: inc/onboarding/build/index.js:28612
+msgid "Header With Banner"
+msgstr "バナー付きヘッダー"
+
+#: inc/onboarding/build/index.js:28620
+msgid "Do you want a light or dark header?"
+msgstr "明るいヘッダーが必要ですか、それとも暗いヘッダーが必要ですか?"
+
+#: inc/onboarding/build/index.js:28624 inc/onboarding/build/index.js:28662
+msgid "Light"
+msgstr "ライト"
+
+#: inc/onboarding/build/index.js:28627 inc/onboarding/build/index.js:28665
+msgid "Dark"
+msgstr "ダーク"
+
+#: inc/onboarding/build/index.js:28640
+msgid "Choose your footer style"
+msgstr "フッターのスタイルを選択する"
+
+#: inc/onboarding/build/index.js:28644
+msgid "Footer with Nav Columns"
+msgstr "ナビゲーション列付きのフッター"
+
+#: inc/onboarding/build/index.js:28647
+msgid "Footer Minimal"
+msgstr "フッター ミニマル"
+
+#: inc/onboarding/build/index.js:28650
+msgid "Footer Centered"
+msgstr "フッター中央揃え"
+
+#: inc/onboarding/build/index.js:28658
+msgid "Do you want a light or dark footer?"
+msgstr "明るいフッターと暗いフッターのどちらが必要ですか?"
+
+#: inc/onboarding/build/index.js:28680
+msgid ""
+"You can customize your header and footer later in Site Editor → Patterns → "
+"Template Parts."
+msgstr ""
+"ヘッダーとフッターは、後でサイト エディターの → パターン → テンプレート パー"
+"ツ] でカスタマイズできます。"
+
+#: inc/onboarding/build/index.js:28695
+msgid "Header Preview"
+msgstr "ヘッダープレビュー"
+
+#: inc/onboarding/build/index.js:28698
+msgid "Header preview"
+msgstr "ヘッダープレビュー"
+
+#: inc/onboarding/build/index.js:28703
+msgid "Footer Preview"
+msgstr "フッタープレビュー"
+
+#: inc/onboarding/build/index.js:28706
+msgid "Footer preview"
+msgstr "フッターのプレビュー"
+
+#: inc/onboarding/build/index.js:28817
+msgid "Select a page"
+msgstr "ページを選択"
+
+#: inc/onboarding/build/index.js:28856
+msgid "Failed to create a new page."
+msgstr "新しいページを作成できませんでした。"
+
+#: inc/onboarding/build/index.js:28860
+msgid "Failed to create a new page. Please try again."
+msgstr "新しいページを作成できませんでした。もう一度お試しください。"
+
+#: inc/onboarding/build/index.js:28875
+msgid "Choose a Home page"
+msgstr "ホームページを選択する"
+
+#: inc/onboarding/build/index.js:28877
+msgid "Select what you'd like to show on your homepage."
+msgstr "ホームページに表示する内容を選択します。"
+
+#: inc/onboarding/build/index.js:28886
+msgid "Your homepage displays:"
+msgstr "ホームページには次の情報が表示されます。"
+
+#: inc/onboarding/build/index.js:28890
+msgid "Your latest posts"
+msgstr "あなたの最新の投稿"
+
+#: inc/onboarding/build/index.js:28893
+msgid "A custom page"
+msgstr "カスタムページ"
+
+#: inc/onboarding/build/index.js:28938
+msgid "Select a homepage"
+msgstr "ホームページを選択する"
+
+#: inc/onboarding/build/index.js:28965 inc/onboarding/build/index.js:29025
+msgid "Loading pages..."
+msgstr "ページを読み込んでいます..."
+
+#: inc/onboarding/build/index.js:28977
+msgid "Choose a Blog page"
+msgstr "ブログページを選ぶ"
+
+#: inc/onboarding/build/index.js:28979
+msgid "Select a page to display your latest blog posts."
+msgstr "最新のブログ記事を表示するページを選択します。"
+
+#: inc/onboarding/build/index.js:28988
+msgid "Select a blog page:"
+msgstr "ブログページを選択します。"
+
+#: inc/onboarding/build/index.js:29004
+msgid "Success! We created a page called "
+msgstr "ページ作成、成功！"
+
+#: inc/onboarding/build/index.js:29006
+msgid ". We'll use that for your blog."
+msgstr ".それをブログに活用します。"
+
+#: inc/onboarding/build/index.js:29009
+msgid ""
+"Don't have a blog page yet? No problem, we can create one for you real quick."
+msgstr ""
+"まだブログページをお持ちでないですか？ご安心ください。すぐに素敵なブログを作"
+"成できます。"
+
+#: inc/onboarding/build/index.js:29019
+msgid "Create a blog page"
+msgstr "ブログページを作成する"
+
+#: inc/onboarding/build/index.js:29040
+msgid "Updating preview..."
+msgstr "プレビューを更新しています..."
+
+#: inc/onboarding/build/index.js:29052
+msgid "Permalink update required"
+msgstr "パーマリンクの更新が必要です"
+
+#: inc/onboarding/build/index.js:29054
+msgid ""
+"Please modify your permalink settings. We can't preview your homepage with "
+"plain permalinks."
+msgstr ""
+"パーマリンクの設定を変更してください。プレーンなパーマリンクでホームページを"
+"プレビューすることはできません。"
+
+#: inc/onboarding/build/index.js:29222
+msgid "Install Essential Plugins"
+msgstr "エッセンシャルプラグインのインストール"
+
+#: inc/onboarding/build/index.js:29224
+msgid ""
+"These plugins are highly recommended for building a block-based website with "
+"Ollie."
+msgstr ""
+"これらのプラグインは、Ollieを使ってブロックベースのWebサイトを構築する際に特"
+"におすすめです。"
+
+#: inc/onboarding/build/index.js:29247
+msgid "The Icon Block"
+msgstr "アイコンブロック"
+
+#: inc/onboarding/build/index.js:29250
+msgid ""
+"Add a collection of customizable icons to your content. Required with Ollie "
+"Pro."
+msgstr ""
+"カスタマイズ可能なアイコンのコレクションをコンテンツに追加します。Ollie Proで"
+"必要です。"
+
+#: inc/onboarding/build/index.js:29254 inc/onboarding/build/index.js:29279
+#: inc/onboarding/build/index.js:29304 inc/onboarding/build/index.js:29357
+#: inc/onboarding/build/index.js:29382 inc/onboarding/build/index.js:29407
+msgid "Plugin Installed"
+msgstr "プラグインがインストール済み"
+
+#: inc/onboarding/build/index.js:29254 inc/onboarding/build/index.js:29279
+#: inc/onboarding/build/index.js:29304 inc/onboarding/build/index.js:29357
+#: inc/onboarding/build/index.js:29382 inc/onboarding/build/index.js:29407
+msgid "Activate Plugin"
+msgstr "プラグインを有効化"
+
+#: inc/onboarding/build/index.js:29254
+msgid "Install this plugin (Required)"
+msgstr "このプラグインをインストールします (必須)"
+
+#: inc/onboarding/build/index.js:29272
+msgid "Block Visibility"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29275
+msgid ""
+"Control where your blocks appear and who can see them based on simple "
+"conditions."
+msgstr ""
+"ブロックが表示される場所や、ブロックを表示できるユーザーを制御できるプラグイ"
+"ン。"
+
+#: inc/onboarding/build/index.js:29279 inc/onboarding/build/index.js:29304
+#: inc/onboarding/build/index.js:29357 inc/onboarding/build/index.js:29382
+#: inc/onboarding/build/index.js:29407
+msgid "Install this plugin"
+msgstr "このプラグインをインストールする"
+
+#: inc/onboarding/build/index.js:29297
+msgid "Advanced Query Loop"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29300
+msgid ""
+"Enhances the query loop block by adding more options and advanced queries."
+msgstr ""
+"クエリループブロックを強化するために、オプションと高度なクエリを追加できるプ"
+"ラグイン。"
+
+#: inc/onboarding/build/index.js:29316
+msgid "View Advanced Plugins"
+msgstr "他のおすすめプラグインを確認する"
+
+#: inc/onboarding/build/index.js:29325
+msgid "Advanced Plugins"
+msgstr "おすすめプラグイン"
+
+#: inc/onboarding/build/index.js:29327
+msgid ""
+"These plugins are optional, but may be helpful for building advanced block-"
+"based websites."
+msgstr ""
+"これらのプラグインはオプションですが、高度なブロックベースのWebサイトを構築す"
+"るのに役立つ場合があります。"
+
+#: inc/onboarding/build/index.js:29350
+msgid "Create Block Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29353
+msgid ""
+"A developer tool for creating block themes and writing site editor changes "
+"to your theme."
+msgstr ""
+"ブロックテーマを作成し、サイトエディタの変更をテーマに書き込むための開発者"
+"ツール。"
+
+#: inc/onboarding/build/index.js:29375
+msgid "Custom Post Type UI"
+msgstr "カスタムポストタイプUI"
+
+#: inc/onboarding/build/index.js:29378
+msgid ""
+"Provides an easy interface for registering and managing custom post types "
+"and taxonomies"
+msgstr ""
+"カスタム投稿タイプと分類を登録および管理するための簡単なインターフェイスを提"
+"供するプラグイン。"
+
+#: inc/onboarding/build/index.js:29400
+msgid "Performance Lab"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29403
+msgid "A collection of features focused on enhancing performance of your site."
+msgstr ""
+"サイトのパフォーマンスを向上させることに重点を置いた機能のコレクションです。"
+
+#: inc/onboarding/build/index.js:29422
+msgid "Installing..."
+msgstr "インストール中..."
+
+#: inc/onboarding/build/index.js:29643
+msgid "Choose how you want your pages and blog posts to be displayed."
+msgstr "ページとブログ投稿の表示方法を選択します。"
+
+#: inc/onboarding/build/index.js:29651
+msgid "Page layout options"
+msgstr "ページレイアウトオプション"
+
+#: inc/onboarding/build/index.js:29660 inc/onboarding/build/index.js:29754
+msgid "Centered"
+msgstr "中央揃え"
+
+#: inc/onboarding/build/index.js:29665 inc/onboarding/build/index.js:29759
+msgid "Centered layout"
+msgstr "中央揃えレイアウト"
+
+#: inc/onboarding/build/index.js:29674 inc/onboarding/build/index.js:29768
+msgid "Wide"
+msgstr "ワイド"
+
+#: inc/onboarding/build/index.js:29679 inc/onboarding/build/index.js:29773
+msgid "Wide layout"
+msgstr "ワイドレイアウト"
+
+#: inc/onboarding/build/index.js:29688 inc/onboarding/build/index.js:29782
+msgid "Left Sidebar"
+msgstr "左サイドバー"
+
+#: inc/onboarding/build/index.js:29693 inc/onboarding/build/index.js:29787
+msgid "Left sidebar layout"
+msgstr "左サイドバーのレイアウト"
+
+#: inc/onboarding/build/index.js:29702 inc/onboarding/build/index.js:29796
+msgid "Right Sidebar"
+msgstr "右サイドバー"
+
+#: inc/onboarding/build/index.js:29707 inc/onboarding/build/index.js:29801
+msgid "Right sidebar layout"
+msgstr "右サイドバーのレイアウト"
+
+#: inc/onboarding/build/index.js:29725
+msgid "Use this layout for your blog posts as well"
+msgstr "このレイアウトは、ブログの投稿にも使用します"
+
+#: inc/onboarding/build/index.js:29745
+msgid "Blog post layout"
+msgstr "ブログ投稿のレイアウト"
+
+#: inc/onboarding/build/index.js:29824
+msgid "Blog layout options"
+msgstr "ブログのレイアウトオプション"
+
+#: inc/onboarding/build/index.js:29833
+msgid "Grid"
+msgstr "グリッド"
+
+#: inc/onboarding/build/index.js:29838
+msgid "Grid layout"
+msgstr "グリッドレイアウト"
+
+#: inc/onboarding/build/index.js:29847
+msgid "List"
+msgstr "リスト"
+
+#: inc/onboarding/build/index.js:29852
+msgid "List layout"
+msgstr "リストレイアウト"
+
+#: inc/onboarding/build/index.js:29882
+msgid "Preview of blog page"
+msgstr "ブログページのプレビュー"
+
+#: inc/onboarding/build/index.js:29882
+msgid "Preview of style guide page"
+msgstr "スタイルガイドページのプレビュー"
+
+#: inc/onboarding/build/index.js:29994
+msgid ""
+"We've created a curated collection of beautiful typography to help you get "
+"started."
+msgstr ""
+"私たちは、あなたが始めるのを助けるために、美しいタイポグラフィの厳選されたコ"
+"レクションを作成しました。"
+
+#: inc/onboarding/build/index.js:30002
+msgid "Choose your typography style"
+msgstr "タイポグラフィのスタイルをお選びください"
+
+#: inc/onboarding/build/index.js:30012
+msgid "Style 1"
+msgstr "スタイル 1"
+
+#: inc/onboarding/build/index.js:30014
+msgid "Mona Sans"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30035
+msgid "Style 2"
+msgstr "スタイル 2"
+
+#: inc/onboarding/build/index.js:30037
+msgid "Mona Sans Extended"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30058
+msgid "Style 3"
+msgstr "スタイル 3"
+
+#: inc/onboarding/build/index.js:30060
+msgid "Mona Sans Chunky"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30081
+msgid "Style 4"
+msgstr "スタイル 4"
+
+#: inc/onboarding/build/index.js:30083
+msgid "Mona Sans Narrow"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30104
+msgid "Style 5"
+msgstr "スタイル 5"
+
+#: inc/onboarding/build/index.js:30106
+msgid "DM Sans"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30127
+msgid "Style 6"
+msgstr "スタイル 6"
+
+#: inc/onboarding/build/index.js:30129
+msgid "Big Shoulders"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30150
+msgid "Style 7"
+msgstr "スタイル 7"
+
+#: inc/onboarding/build/index.js:30152
+msgid "Space Grotesk"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30173
+msgid "Style 8"
+msgstr "スタイル 8"
+
+#: inc/onboarding/build/index.js:30175
+msgid "Montagu Slab"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30196
+msgid "Style 9"
+msgstr "スタイル 9"
+
+#: inc/onboarding/build/index.js:30198
+msgid "Fraunces"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30219
+msgid "Style 10"
+msgstr "スタイル 10"
+
+#: inc/onboarding/build/index.js:30221
+msgid "Source Serif 4"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30249
+msgid ""
+"You can change your typography settings later in the Global Styles panel of "
+"the Site Editor."
+msgstr ""
+"タイポグラフィの設定は、後でサイトエディターのグローバルスタイルパネルで変更"
+"できます。"
+
+#: inc/onboarding/build/index.js:30336
+msgid "Quick Start Wizard"
+msgstr "クイックスタートウィザード"
+
+#: inc/onboarding/build/index.js:30338
+msgid ""
+"Welcome to the Ollie Quick Start Wizard. This setup wizard will help you "
+"create pages, customize the styles on your site, and much more."
+msgstr ""
+"Ollieクイックスタートウィザードへようこそ。このセットアップ ウィザードは、"
+"ページの作成、サイトのスタイルのカスタマイズなどに役立ちます。"
+
+#: inc/onboarding/build/index.js:30344
+msgid "Start Setup Wizard"
+msgstr "セットアップ ウィザードの開始"
+
+#: inc/onboarding/build/index.js:30725
+msgid "Welcome to Ollie Pro!"
+msgstr "Ollie Proへようこそ!"
+
+#: inc/onboarding/build/index.js:30727
+msgid ""
+"Visit the Ollie Dashboard (Appearance → Ollie) to activate Ollie Pro, use "
+"the setup wizard, and access docs and video tutorials. Head over there to "
+"get started!"
+msgstr ""
+"Ollieダッシュボード(外観→ Ollie)にアクセスして、Ollie Proをアクティブ化し、"
+"セットアップウィザードを使用し、ドキュメントやビデオチュートリアルにアクセス"
+"できます。でははじめていきましょう！"
+
+#: inc/onboarding/build/index.js:30737
+msgid "View Ollie Dashboard →"
+msgstr "Ollieダッシュボードを表示 →"
+
+#: inc/onboarding/build/index.js:30742
+msgid "Skip for now"
+msgstr "今はスキップ"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:56
+msgid "View details"
+msgstr "詳細を見る"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr "%sについての詳細"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr "アップデートを確認する"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "%s プラグインは最新です。"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "%sプラグインの新しいバージョンが利用可能です。"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "%1$s.に対して利用可能なアップデートがあるか確認できませんでした。"
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
+#: inc/plugin-update-checker/Puc/v5p5/Vcs/PluginUpdateChecker.php:113
+msgid "There is no changelog available."
+msgstr "利用可能な変更ログはありません。"
+
+#: ollie-pro.php:63
+#, php-format
+msgid ""
+"Ollie Pro 2.0 requires Ollie theme version 1.4.8 or higher. Please %s before "
+"continuing."
+msgstr ""
+"Ollie Pro 2.0には、Ollieテーマバージョン1.4.8以降が必要です。続行する前に%sし"
+"てください。"
+
+#: ollie-pro.php:64
+msgid "update your theme"
+msgstr "テーマを更新する"
+
+#. translators: %s: Link to Ollie theme
+#: ollie-pro.php:84 ollie-pro.php:92
+#, php-format
+msgid ""
+"The Ollie Pro plugin needs the free Ollie theme to work. View the theme and "
+"install it %s."
+msgstr ""
+"Ollie Proプラグインを動作させるには、無料のOllieテーマが必要です。テーマを表"
+"示し、%sインストールします。"
+
+#. Plugin Name of the plugin/theme
+msgid "Ollie Pro"
+msgstr "Ollie Pro"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://olliewp.com"
+msgstr "https://olliewp.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Adds the Ollie Pro pattern library and Ollie Pro Dashboard to the Ollie "
+"block theme."
+msgstr ""
+"OllieブロックテーマにOllie ProパターンライブラリとOllie Proダッシュボードを追"
+"加します。"
+
+#. Author of the plugin/theme
+msgid "buildwithollie"
+msgstr "buildwithollie"

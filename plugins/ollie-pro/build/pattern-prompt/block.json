@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/pattern-prompt",
+  "title": "Design Prompt",
+  "category": "widgets",
+  "description": "Describe what you need and get AI-powered pattern suggestions.",
+  "keywords": [
+    "pattern",
+    "prompt",
+    "ai",
+    "ollie",
+    "discover"
+  ],
+  "version": "1.0.0",
+  "textdomain": "ollie-pro",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css"
+}

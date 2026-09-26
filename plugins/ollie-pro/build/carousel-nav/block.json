@@ -1,0 +1,136 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ollie/carousel-nav",
+  "version": "1.0.0",
+  "title": "Carousel Controls",
+  "category": "design",
+  "description": "Arrows, dots, bars, scrollbar, or play/pause for the carousel.",
+  "ancestor": [
+    "ollie/carousel"
+  ],
+  "usesContext": [
+    "ollie/carousel/centerNav"
+  ],
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "wide"
+    },
+    "style": {
+      "type": "object",
+      "default": {
+        "spacing": {
+          "blockGap": {
+            "left": "8px"
+          }
+        }
+      }
+    },
+    "navType": {
+      "type": "string",
+      "default": "arrows"
+    },
+    "justifyContent": {
+      "type": "string",
+      "default": "left"
+    },
+    "arrowIcon": {
+      "type": "string",
+      "default": "arrow-circle"
+    },
+    "arrowIconWeight": {
+      "type": "string",
+      "default": "regular"
+    },
+    "customArrowSvg": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowSize": {
+      "type": "number",
+      "default": 36
+    },
+    "arrowOffset": {
+      "type": "number",
+      "default": 10
+    },
+    "arrowColor": {
+      "type": "string"
+    },
+    "dotColor": {
+      "type": "string"
+    },
+    "dotSize": {
+      "type": "number",
+      "default": 8
+    },
+    "barSize": {
+      "type": "number",
+      "default": 4
+    },
+    "barWidth": {
+      "type": "number",
+      "default": 32
+    },
+    "barFill": {
+      "type": "boolean",
+      "default": false
+    },
+    "buttonTextColor": {
+      "type": "string"
+    },
+    "buttonBackgroundColor": {
+      "type": "string"
+    },
+    "buttonFontSize": {
+      "type": [
+        "string",
+        "number"
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": {
+        "sides": [
+          "horizontal"
+        ],
+        "__experimentalDefault": "8px"
+      },
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      },
+      "__experimentalSkipSerialization": [
+        "blockGap",
+        "padding"
+      ]
+    },
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "flex",
+        "flexWrap": "nowrap",
+        "verticalAlignment": "center"
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "textdomain": "ollie-pro",
+  "example": {
+    "attributes": {
+      "navType": "arrows",
+      "justifyContent": "center"
+    }
+  }
+}

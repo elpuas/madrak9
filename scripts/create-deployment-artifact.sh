@@ -46,6 +46,9 @@ required_source_files=(
 	themes/epdc-base/build/index.asset.php
 	themes/epdc-base/build/style-index.css
 	themes/epdc-base/build/index.css
+	themes/ollie/functions.php
+	themes/ollie/style.css
+	themes/ollie/theme.json
 )
 
 for required_source_file in "${required_source_files[@]}"; do
@@ -55,7 +58,7 @@ for required_source_file in "${required_source_files[@]}"; do
 	fi
 done
 
-for required_source_directory in plugins themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/styles themes/epdc-base/build; do
+for required_source_directory in plugins themes/epdc-base/parts themes/epdc-base/templates themes/epdc-base/styles themes/epdc-base/build themes/ollie; do
 	if [[ ! -d "$source_dir/$required_source_directory" ]]; then
 		echo "Required deployment source directory is missing: $required_source_directory" >&2
 		exit 1
@@ -65,6 +68,7 @@ done
 mkdir -p "$artifact_dir/themes/epdc-base"
 cp -a "$source_dir/index.php" "$artifact_dir/"
 cp -a "$source_dir/plugins" "$artifact_dir/"
+cp -a "$source_dir/themes/ollie" "$artifact_dir/themes/"
 
 for theme_file in functions.php style.css theme.json screenshot.png; do
 	cp -a "$source_dir/themes/epdc-base/$theme_file" "$artifact_dir/themes/epdc-base/"

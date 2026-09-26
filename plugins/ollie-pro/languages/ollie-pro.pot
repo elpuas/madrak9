@@ -1,0 +1,1960 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ollie Pro\n"
+"POT-Creation-Date: 2025-06-09 20:19+0200\n"
+"PO-Revision-Date: 2025-05-05 18:35+0900\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: ollie-pro.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: inc/plugin-update-checker/vendor\n"
+"X-Poedit-SearchPathExcluded-2: inc/onboarding/node_modules\n"
+"X-Poedit-SearchPathExcluded-3: node_modules\n"
+
+#: build/pattern-block/index.js:9080 build/pattern-block/index.js:9724
+msgid "Pattern Actions"
+msgstr ""
+
+#: build/pattern-block/index.js:9087
+msgid "Insert on current page"
+msgstr ""
+
+#: build/pattern-block/index.js:9095
+msgid "Insert Pattern"
+msgstr ""
+
+#: build/pattern-block/index.js:9103
+msgid "Insert dynamic pattern"
+msgstr ""
+
+#: build/pattern-block/index.js:9111
+msgid "Insert Dynamic Pattern"
+msgstr ""
+
+#: build/pattern-block/index.js:9119
+msgid "Copy pattern blocks"
+msgstr ""
+
+#: build/pattern-block/index.js:9134
+msgid "Download pattern to theme"
+msgstr ""
+
+#: build/pattern-block/index.js:9136
+msgid ""
+"Download the pattern to your theme's pattern library to edit and customize"
+msgstr ""
+
+#: build/pattern-block/index.js:9148
+msgid ""
+"Heads up, this will remove the pattern file from your theme. If you've "
+"customized the pattern, the changes will be lost."
+msgstr ""
+
+#: build/pattern-block/index.js:9155
+msgid "Remove Pattern"
+msgstr ""
+
+#: build/pattern-block/index.js:9155
+msgid "Download Pattern"
+msgstr ""
+
+#: build/pattern-block/index.js:9163 build/pattern-block/index.js:10514
+msgid "Remove from favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:9171 build/pattern-block/index.js:9754
+msgid "Remove from Favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:9179
+msgid "Add To Favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:9187 build/pattern-block/index.js:9759
+msgid "Add to Favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:9355
+msgid "Previous"
+msgstr ""
+
+#: build/pattern-block/index.js:9422
+msgid "Next"
+msgstr ""
+
+#: build/pattern-block/index.js:9464
+msgid "No patterns found."
+msgstr ""
+
+#: build/pattern-block/index.js:9483
+msgid "Showing"
+msgstr ""
+
+#: build/pattern-block/index.js:9483
+msgid "of"
+msgstr ""
+
+#: build/pattern-block/index.js:9496
+msgid "Per page:"
+msgstr ""
+
+#: build/pattern-block/index.js:9664
+msgid "Ollie Pattern Preview"
+msgstr ""
+
+#: build/pattern-block/index.js:9693 build/pattern-block/index.js:9734
+msgid "Pattern Details"
+msgstr ""
+
+#: build/pattern-block/index.js:9707
+msgid "Added to favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:9714
+msgid "Added to theme"
+msgstr ""
+
+#: build/pattern-block/index.js:9739
+msgid "Insert Into Page"
+msgstr ""
+
+#: build/pattern-block/index.js:9744
+msgid "Remove from Theme"
+msgstr ""
+
+#: build/pattern-block/index.js:9749
+msgid "Add To Theme"
+msgstr ""
+
+#: build/pattern-block/index.js:9797
+msgid ""
+"Browse the patterns available in Ollie pattern library and download them to "
+"your site."
+msgstr ""
+
+#: build/pattern-block/index.js:9798
+msgid "Ollie Pattern Library"
+msgstr ""
+
+#: build/pattern-block/index.js:9808
+msgid "Open Ollie Pattern Library"
+msgstr ""
+
+#: build/pattern-block/index.js:9958 build/pattern-block/index.js:9998
+#: build/pattern-block/index.js:10012 inc/onboarding/build/index.js:24892
+msgid "Go Back"
+msgstr ""
+
+#: build/pattern-block/index.js:9980
+msgid "This collection uses the"
+msgstr ""
+
+#: build/pattern-block/index.js:9980
+msgid "style variation in the Ollie theme."
+msgstr ""
+
+#: build/pattern-block/index.js:9984
+msgid "Learn about style variations"
+msgstr ""
+
+#: build/pattern-block/index.js:10051 build/pattern-block/index.js:10098
+msgid "Pattern Categories"
+msgstr ""
+
+#: build/pattern-block/index.js:10078
+msgid "Pattern Collections"
+msgstr ""
+
+#: build/pattern-block/index.js:10171
+msgid "Preview mobile design"
+msgstr ""
+
+#: build/pattern-block/index.js:10172
+msgid "Mobile"
+msgstr ""
+
+#: build/pattern-block/index.js:10183
+msgid "Preview tablet design"
+msgstr ""
+
+#: build/pattern-block/index.js:10184
+msgid "Tablet"
+msgstr ""
+
+#: build/pattern-block/index.js:10195
+msgid "Preview desktop design"
+msgstr ""
+
+#: build/pattern-block/index.js:10196
+msgid "Desktop"
+msgstr ""
+
+#: build/pattern-block/index.js:10304 build/pattern-block/index.js:10422
+#: build/pattern-block/index.js:10442
+msgid "Search patterns"
+msgstr ""
+
+#: build/pattern-block/index.js:10413 build/pattern-block/index.js:10418
+msgid "Search in"
+msgstr ""
+
+#: build/pattern-block/index.js:10458
+msgid "Loading..."
+msgstr ""
+
+#: build/pattern-block/index.js:10471
+msgid "Bulk Edit"
+msgstr ""
+
+#: build/pattern-block/index.js:10483
+msgid "Add to theme"
+msgstr ""
+
+#: build/pattern-block/index.js:10490
+msgid "Remove from theme"
+msgstr ""
+
+#: build/pattern-block/index.js:10497
+msgid "Insert into current page"
+msgstr ""
+
+#: build/pattern-block/index.js:10507
+msgid "Add to favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:10523
+msgid "Select All"
+msgstr ""
+
+#: build/pattern-block/index.js:10530
+msgid "Deselect"
+msgstr ""
+
+#: build/pattern-block/index.js:10539
+msgid "Sort By"
+msgstr ""
+
+#: build/pattern-block/index.js:10547
+msgid "Ascending"
+msgstr ""
+
+#: build/pattern-block/index.js:10552
+msgid "Descending"
+msgstr ""
+
+#: build/pattern-block/index.js:10557
+msgid "Latest"
+msgstr ""
+
+#: build/pattern-block/index.js:10565
+msgid "Clear sort"
+msgstr ""
+
+#: build/pattern-block/index.js:10574
+msgid "Filter"
+msgstr ""
+
+#: build/pattern-block/index.js:10584
+msgid "My Favorites"
+msgstr ""
+
+#: build/pattern-block/index.js:10589
+msgid "Downloaded to theme"
+msgstr ""
+
+#: build/pattern-block/index.js:10597
+msgid "Clear filter"
+msgstr ""
+
+#: build/pattern-block/index.js:10606
+msgid "Grid View"
+msgstr ""
+
+#: build/pattern-block/index.js:10617
+msgid "2 Column"
+msgstr ""
+
+#: build/pattern-block/index.js:10623
+msgid "3 Column"
+msgstr ""
+
+#: build/pattern-block/index.js:10629
+msgid "4 Column"
+msgstr ""
+
+#: inc/class-olpo-helper.php:686
+msgid "You do not have permission to reset templates."
+msgstr ""
+
+#: inc/class-olpo-helper.php:704
+msgid "Templates reset successfully."
+msgstr ""
+
+#: inc/class-olpo-helper.php:707
+msgid "Failed to reset templates."
+msgstr ""
+
+#: inc/class-olpo-helper.php:714
+msgid "You do not have permission to reset global styles."
+msgstr ""
+
+#: inc/class-olpo-helper.php:731
+msgid "Global styles reset successfully."
+msgstr ""
+
+#: inc/class-olpo-helper.php:734
+msgid "Failed to reset global styles."
+msgstr ""
+
+#: inc/class-olpo-settings.php:50
+msgid "Settings"
+msgstr ""
+
+#: inc/class-olpo-settings.php:51
+msgid "Docs"
+msgstr ""
+
+#: inc/class-olpo-settings.php:63 inc/class-olpo-settings.php:64
+#: inc/onboarding/build/index.js:28106
+msgid "Ollie"
+msgstr ""
+
+#: inc/class-olpo-settings.php:831 inc/class-olpo-settings.php:927
+msgid "Style and type parameters are required"
+msgstr ""
+
+#. translators: %s: Name of the pattern
+#. translators: %s: Name of a pattern
+#: inc/class-olpo-settings.php:847 inc/class-olpo-settings.php:944
+#, php-format
+msgid "Pattern %s not found"
+msgstr ""
+
+#. translators: %s: Type to update
+#: inc/class-olpo-settings.php:895
+#, php-format
+msgid "%s updated successfully"
+msgstr ""
+
+#. translators: %s: the type of the template
+#: inc/class-olpo-settings.php:992
+#, php-format
+msgid "%s template updated successfully"
+msgstr ""
+
+#: inc/class-olpo-settings.php:1020
+msgid "Preview content deleted successfully"
+msgstr ""
+
+#: inc/class-olpo-settings.php:1033
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1049
+#, php-format
+msgid "Preview %s already deleted"
+msgstr ""
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1059
+#, php-format
+msgid "Preview %s deleted successfully"
+msgstr ""
+
+#. translators: %s: Type to delete
+#: inc/class-olpo-settings.php:1061
+#, php-format
+msgid "Failed to delete preview %s"
+msgstr ""
+
+#: inc/class-olpo-settings.php:1166
+msgid "No plugins specified"
+msgstr ""
+
+#: inc/onboarding/build/index.js:20939
+msgid "Back to WP Admin"
+msgstr ""
+
+#: inc/onboarding/build/index.js:20979
+msgid "Reset Ollie Settings"
+msgstr ""
+
+#: inc/onboarding/build/index.js:20983
+msgid "Reset All Settings"
+msgstr ""
+
+#: inc/onboarding/build/index.js:20991
+msgid ""
+"Reset settings and template customizations to the default theme settings."
+msgstr ""
+
+#: inc/onboarding/build/index.js:20999
+msgid "Reset Ollie Styles & Settings"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21002
+msgid "Reset all style and wizard settings to the default theme styles."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21011
+msgid "Reset Ollie Templates"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21014
+msgid "Reset all template customizations to the default theme templates."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21033
+msgid ""
+"Resetting styles and templates should be done with caution if you have "
+"already made significant changes to your site. This cannot be undone."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21042 inc/onboarding/build/index.js:22162
+#: inc/onboarding/build/index.js:24022
+msgid "Cancel"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21049
+msgid "Resetting..."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Settings & Templates"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Settings"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21049
+msgid "Reset Templates"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21049 inc/onboarding/build/index.js:27845
+msgid "Reset"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your settings & templates have been reset"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your settings have been reset"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21071
+msgid "Your templates have been reset"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset both your styles and templates and they are now back to the theme "
+"defaults. Continue to the setup wizard or starter sites to set up your site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset your styles and they are now back to the theme defaults. Continue "
+"to the setup wizard or starter sites to set up your site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21073
+msgid ""
+"We reset your templates and they are now back to the theme defaults. "
+"Continue to the setup wizard or starter sites to set up your site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21086
+msgid "Close"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21286
+msgid "Play Video"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21357 inc/onboarding/build/index.js:22709
+msgid "Ollie Pro Dashboard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21374 inc/onboarding/build/index.js:22405
+#: inc/onboarding/build/index.js:23239
+msgid "Site Setup Wizard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21394 inc/onboarding/build/index.js:22413
+#: inc/onboarding/build/index.js:23263
+msgid "Starter Sites"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21401
+msgid "Create Child Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21461
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21468 inc/onboarding/build/index.js:28144
+msgid "Create Pages"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21475
+msgid "Homepage & Blog"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21492 inc/onboarding/build/index.js:27671
+msgid "Color Palette"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21509 inc/onboarding/build/index.js:29992
+msgid "Typography"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21516 inc/onboarding/build/index.js:29641
+msgid "Page Layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21523
+msgid "Header & Footer"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21746 inc/onboarding/build/index.js:22421
+#: inc/onboarding/build/index.js:23287 inc/onboarding/build/index.js:23303
+msgid "Create a Child Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21748
+msgid ""
+"Use this tool to create and activate a child theme based on the Ollie theme."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21759
+msgid "Child theme created and activated."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21777 inc/onboarding/build/index.js:21934
+msgid "Theme Name"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21797
+msgid "Theme URL"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21820
+msgid "Description"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21826
+msgid "A child theme for Ollie."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21840
+msgid "Author"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21860
+msgid "Author URL"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21880
+msgid "Version"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21900
+msgid "Text Domain"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21942
+msgid "My Ollie Child Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21945
+msgid "The name of your child theme as it appears in the WordPress admin."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21954
+msgid "Theme URL (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21965
+msgid "The URL where users can learn more about your theme."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21974
+msgid "Description (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:21981
+msgid "A custom child theme based on Ollie."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21984
+msgid "A brief description of your child theme."
+msgstr ""
+
+#: inc/onboarding/build/index.js:21993
+msgid "Author (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22000
+msgid "Your Name"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22003
+msgid "The name of the theme author."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22012
+msgid "Author URL (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22023
+msgid "The URL of the theme author's website."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22032
+msgid "Version (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22042
+msgid "The version number of your child theme."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22051
+msgid "Text Domain (optional)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22061
+msgid "The text domain used for theme translations."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22084
+msgid "Create and Activate Child Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22096
+msgid "What is a child theme?"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22099
+msgid ""
+"A child theme is a theme that inherits the functionality and styling of "
+"another theme (the parent theme) while allowing you to make customizations "
+"that won't be lost when the parent theme updates."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22107
+msgid "Do I need a child theme?"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22110
+msgid ""
+"These days, most users don't need a child theme since many customizations "
+"can be done directly in the block and site editor."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22118
+msgid "I lost my customizations!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22121
+msgid ""
+"Global style changes are tied to your active theme. If you activate a child "
+"theme after making customizations, those changes won't appear. Always "
+"activate your child theme first, then make customizations."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22129 inc/onboarding/build/index.js:22136
+msgid "Create Block Theme Plugin"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22132
+msgid ""
+"If you plan to do extensive work on your child theme, consider installing "
+"the "
+msgstr ""
+
+#: inc/onboarding/build/index.js:22137
+msgid ""
+", which helps write site editor and global style changes directly to your "
+"child theme files."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22142
+msgid "Heads up!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22155
+msgid ""
+"Global style changes (colors, typography, etc.) are tied to your active "
+"theme. If you activate a child theme after making customizations, those "
+"changes won't appear. You will need to activate your previous theme to see "
+"those customizations again."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22169
+msgid "Create and Activate"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22384
+msgid "Theme Studio"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22431
+msgid "Theme Studio Docs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22438
+msgid "Resources"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22448
+msgid "Ollie Docs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22454
+msgid "Ollie Videos"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22460
+msgid "Ollie Support"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22469 inc/onboarding/build/index.js:23126
+msgid "Visit OllieWP.com"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22496
+msgid "Ollie Theme Studio"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22498
+msgid "Use these tools to get your site up and running in just a few minutes."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22514
+msgid "Ollie Docs, Guides, and Videos"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22516
+msgid ""
+"We've put together comprehensive tutorials to help you build faster and "
+"smarter."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22522
+msgid "Ollie Documentation"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22523
+msgid ""
+"Visit the Ollie docs homepage to browse all of the available docs and learn "
+"how to build with block themes."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22525
+msgid "Browse the Docs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22527
+msgid "Ollie Video Library"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22528
+msgid ""
+"Learn how to use the Ollie Pro pattern library, theme studio, and much more "
+"by watching our video tutorials."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22530
+msgid "Watch the Videos"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22532
+msgid "Get help with Ollie"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22533
+msgid ""
+"Having trouble with your theme or want to report an issue? Submit an issue "
+"through your Ollie Pro account and we'll help out."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22535
+msgid "Get Help with Ollie"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22606
+msgid "Getting started with Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22608
+msgid "Check out the videos below to learn the basics of Ollie Pro."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22614
+msgid "Close Starter Guide"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22624 inc/onboarding/build/index.js:28377
+msgid "Activate Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22632
+msgid ""
+"Log into your Ollie Pro account to activate Ollie Pro on this site and "
+"unlock the full Ollie Pro pattern library and pro tools."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22637 inc/onboarding/build/index.js:22818
+msgid "Sign in to Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22642
+msgid "Learn about the site wizard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22643
+msgid ""
+"The site setup wizard guides you through each step of your site setup "
+"including plugins, pages, typogrpahy, colors, and layouts."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22647
+msgid "Learn about starter sites"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22648
+msgid ""
+"Starter sites are one-click sites pre-configured with pages, templates, "
+"styles, and plugins to help you launch faster."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22652
+msgid "Learn about the pattern library"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22653
+msgid ""
+"Learn how to use the Ollie Pro pattern library to browse hundreds of pixel-"
+"perfect, responsive patterns and page layouts."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22711
+msgid "Design better, build faster, and publish sooner with Ollie"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22713
+msgid ""
+"A new era of site building has arrived in WordPress. With the powerful new "
+"site editor, you can build beautiful, blazing-fast websites natively with "
+"WordPress and Ollie — no page builder plugins required."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22719
+msgid "Sign In to Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22723
+msgid "Get Ollie Pro now"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22798
+msgid "Login successful!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22821
+msgid "Sign in to unlock the Ollie Pro pattern library and other pro features."
+msgstr ""
+
+#: inc/onboarding/build/index.js:22827
+msgid "Email"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22836
+msgid "Password"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22851
+msgid "Sign in"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22856
+msgid "Forgot Password?"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22995 inc/onboarding/build/index.js:23186
+msgid "Sign In"
+msgstr ""
+
+#: inc/onboarding/build/index.js:22995
+msgid "My Account"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23014
+msgid "No active subscription found."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23016
+msgid "Please renew your subscription to continue using Ollie Pro."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23020 inc/onboarding/build/index.js:23190
+msgid "Get Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23024 inc/onboarding/build/index.js:23095
+msgid "You are an Ollie Pro!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23026
+msgid ""
+"Manage your subscription, activations and other account details by visiting "
+"your account area on OllieWP.com."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23030
+msgid "Go to your account"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23098
+msgid "Logged in with"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23102
+msgid "Log out of Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23106
+msgid "The website was deactivated successfully."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23113
+msgid "Deactivate website from Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23123
+msgid ""
+"Manage your subscription and other account details by visiting your account "
+"area on OllieWP.com."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23160
+msgid "Unlock these pages with Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23161
+msgid ""
+"Get Ollie Pro to start building with these pixel-perfect pages and hundreds "
+"of responsive patterns."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23247
+msgid ""
+"Visit the Ollie site setup wizard to quickly walk through each step of your "
+"site setup including colors, typography, page creation, and more."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23255
+msgid "Start Site Setup"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23271
+msgid ""
+"Ollie starter sites are pre-configured sites that save you a ton of time by "
+"automatically installing plugins, creating pages, and more."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23279
+msgid "Import a Starter Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23295
+msgid ""
+"Looking to make code customizations? Use the child theme creator to create "
+"your own child theme where you can safely make changes."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23778
+msgid "Installed the starter site plugins!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23778
+msgid "Install the starter site plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23790
+msgid "Updated your typography and color palette!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23790 inc/onboarding/build/index.js:23995
+msgid "Update your typography and color palette global styles"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23802
+msgid "Created the starter site pages!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23802
+msgid "Create the starter site pages"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23814
+msgid "Updated your templates!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23814 inc/onboarding/build/index.js:23974
+msgid "Update your templates to match the starter site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23838
+msgid "Ollie Pro Starter Sites"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23840
+msgid ""
+"Generate an entire pre-made site with pages, typography, colors, and more "
+"with a starter site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:23869
+msgid "Starter Site Intro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23871
+msgid ""
+"Learn more about Starter Sites and how to use them to quickly create a new "
+"site. "
+msgstr ""
+
+#: inc/onboarding/build/index.js:23876 inc/onboarding/build/index.js:30361
+msgid "Watch Video Tutorial"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23899
+msgid "Sign in to import"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23899
+msgid "Import"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23899
+msgid "Starter Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23904
+msgid "Import Starter Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23912
+msgid ""
+"Importing this starter site will make the following changes to your site:"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23932
+msgid "Install the plugins you selected"
+msgstr ""
+
+#: inc/onboarding/build/index.js:23953
+msgid "Create the pages you selected"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24014
+msgid ""
+"Please note that this will override existing templates, template parts, and "
+"global styles on your site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:24026
+msgid "Import Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24031
+msgid "We are importing your starter site..."
+msgstr ""
+
+#: inc/onboarding/build/index.js:24057
+msgid "Your site is ready!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24059
+msgid ""
+"Your starter site has been imported successfully. You can now customize your "
+"site in the Site Editor."
+msgstr ""
+
+#: inc/onboarding/build/index.js:24070 inc/onboarding/build/index.js:28303
+#: inc/onboarding/build/index.js:28313
+msgid "View Your Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24073
+msgid "View the front end of your site in a new tab"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24081
+msgid "View Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24093 inc/onboarding/build/index.js:28328
+msgid "Edit Your Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24096
+msgid "Start customizing your site via the Site Editor"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24101
+msgid "Open Site Editor"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24113
+msgid "Edit Header and Footer"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24116
+msgid "Edit your header and footer via the Site Editor"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24121 inc/onboarding/build/index.js:28361
+msgid "Edit Template Parts"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24195
+msgid "Unlock this starter site with Ollie Pro"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24196
+msgid ""
+"Get Ollie Pro to instantly create this a site and start building with "
+"hundreds of responsive patterns."
+msgstr ""
+
+#: inc/onboarding/build/index.js:24213
+msgid "View Demo"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24217
+#, javascript-format
+msgid "%s Preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24223
+msgid "About this starter site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24256
+msgid "Starter Site Plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24258
+msgid "The following plugins are installed with this starter site:"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24279
+msgid "Installed"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24311
+msgid "Page Designs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24313
+msgid "The following pages are included with the starter site:"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24330
+#, javascript-format
+msgid "%s preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24861
+msgid "Start Setup"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24863
+msgid "Install and Continue"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24865
+msgid "Create Pages and Continue"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24867
+msgid "Save and Finish"
+msgstr ""
+
+#: inc/onboarding/build/index.js:24869
+msgid "Save and Continue"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27673
+msgid ""
+"Use one of the carefully-crafted color palettes we've created, or generate "
+"your own below."
+msgstr ""
+
+#: inc/onboarding/build/index.js:27681
+msgid "Color palette options"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27684
+msgid "Choose a color palette below"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27687
+msgid "Generate your own palette"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27698
+msgid "Color palettes"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27707
+msgid "Purple"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27720
+msgid "Blue"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27733
+msgid "Green"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27746
+msgid "Orange"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27759
+msgid "Pink"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27772
+msgid "Red"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27785
+msgid "Teal"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27798
+msgid "Neon"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27815
+msgid "Create a color palette"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27817
+msgid ""
+"Generate a custom color palette based on your brand color using the color "
+"picker."
+msgstr ""
+
+#: inc/onboarding/build/index.js:27880
+msgid "This brand color may be tough to read. Try making it a little darker."
+msgstr ""
+
+#: inc/onboarding/build/index.js:27894 inc/onboarding/build/index.js:28172
+#: inc/onboarding/build/index.js:28678 inc/onboarding/build/index.js:30247
+msgid "Pro Tip"
+msgstr ""
+
+#: inc/onboarding/build/index.js:27896
+msgid ""
+"You can change adjust your color palette further in the Global Styles panel "
+"of the Site Editor."
+msgstr ""
+
+#: inc/onboarding/build/index.js:27908 inc/onboarding/build/index.js:29044
+#: inc/onboarding/build/index.js:30261
+msgid "Preview of your homepage"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28043
+msgid "Ollie Homepage"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28047
+msgid "Ollie Blog"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28051
+msgid "Ollie About"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28055
+msgid "Ollie Features"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28059
+msgid "Ollie Pricing"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28063
+msgid "Ollie Download"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28067
+msgid "Ollie Profile"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28109
+msgid "Agency"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28112
+msgid "Creator"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28115
+msgid "Startup"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28118
+msgid "Studio"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28146
+msgid ""
+"Choose which pages you'd like to create and we'll customize them in the next "
+"steps."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28174
+msgid ""
+"You can mix and match pages from different collections. Once added to your "
+"site, each page seamlessly adapts to your site's current color and "
+"typography styles."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28289
+msgid "Your site is ready to go!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28291
+msgid ""
+"You've completed the setup process! Now you can view, edit, and customize "
+"your site using the Site Editor and start building with Ollie and Ollie Pro."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28305
+msgid "Open your site to check out the live front-end view."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28330
+msgid ""
+"Go to the Site Editor to view and edit your homepage, navigations, and "
+"customize your site with global styles."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28337
+msgid "Edit Site"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28352
+msgid "Edit Your Header and Footer"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28354
+msgid ""
+"Go to the Site Editor to edit your header and footer template parts and site "
+"navigation."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28379
+msgid ""
+"Visit the dashboard to sign in and unlock the entire Ollie Pro pattern "
+"library."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28387
+msgid "Visit Dashboard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28403 inc/onboarding/build/index.js:28415
+msgid "View Ollie Docs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28405
+msgid ""
+"Watch tutorial videos and read through the docs to learn how to build "
+"beautiful websites with Ollie."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28592
+msgid "Header and Footer"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28594
+msgid ""
+"Choose a design for your header and footer. You can customize further in the "
+"Site Editor."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28602
+msgid "Choose your header style"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28606
+msgid "Header With Navs"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28609
+msgid "Header With Buttons"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28612
+msgid "Header With Banner"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28620
+msgid "Do you want a light or dark header?"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28624 inc/onboarding/build/index.js:28662
+msgid "Light"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28627 inc/onboarding/build/index.js:28665
+msgid "Dark"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28640
+msgid "Choose your footer style"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28644
+msgid "Footer with Nav Columns"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28647
+msgid "Footer Minimal"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28650
+msgid "Footer Centered"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28658
+msgid "Do you want a light or dark footer?"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28680
+msgid ""
+"You can customize your header and footer later in Site Editor → Patterns → "
+"Template Parts."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28695
+msgid "Header Preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28698
+msgid "Header preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28703
+msgid "Footer Preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28706
+msgid "Footer preview"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28817
+msgid "Select a page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28856
+msgid "Failed to create a new page."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28860
+msgid "Failed to create a new page. Please try again."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28875
+msgid "Choose a Home page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28877
+msgid "Select what you'd like to show on your homepage."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28886
+msgid "Your homepage displays:"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28890
+msgid "Your latest posts"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28893
+msgid "A custom page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28938
+msgid "Select a homepage"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28965 inc/onboarding/build/index.js:29025
+msgid "Loading pages..."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28977
+msgid "Choose a Blog page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:28979
+msgid "Select a page to display your latest blog posts."
+msgstr ""
+
+#: inc/onboarding/build/index.js:28988
+msgid "Select a blog page:"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29004
+msgid "Success! We created a page called "
+msgstr ""
+
+#: inc/onboarding/build/index.js:29006
+msgid ". We'll use that for your blog."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29009
+msgid ""
+"Don't have a blog page yet? No problem, we can create one for you real quick."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29019
+msgid "Create a blog page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29040
+msgid "Updating preview..."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29052
+msgid "Permalink update required"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29054
+msgid ""
+"Please modify your permalink settings. We can't preview your homepage with "
+"plain permalinks."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29222
+msgid "Install Essential Plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29224
+msgid ""
+"These plugins are highly recommended for building a block-based website with "
+"Ollie."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29247
+msgid "The Icon Block"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29250
+msgid ""
+"Add a collection of customizable icons to your content. Required with Ollie "
+"Pro."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29254 inc/onboarding/build/index.js:29279
+#: inc/onboarding/build/index.js:29304 inc/onboarding/build/index.js:29357
+#: inc/onboarding/build/index.js:29382 inc/onboarding/build/index.js:29407
+msgid "Plugin Installed"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29254 inc/onboarding/build/index.js:29279
+#: inc/onboarding/build/index.js:29304 inc/onboarding/build/index.js:29357
+#: inc/onboarding/build/index.js:29382 inc/onboarding/build/index.js:29407
+msgid "Activate Plugin"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29254
+msgid "Install this plugin (Required)"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29272
+msgid "Block Visibility"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29275
+msgid ""
+"Control where your blocks appear and who can see them based on simple "
+"conditions."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29279 inc/onboarding/build/index.js:29304
+#: inc/onboarding/build/index.js:29357 inc/onboarding/build/index.js:29382
+#: inc/onboarding/build/index.js:29407
+msgid "Install this plugin"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29297
+msgid "Advanced Query Loop"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29300
+msgid ""
+"Enhances the query loop block by adding more options and advanced queries."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29316
+msgid "View Advanced Plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29325
+msgid "Advanced Plugins"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29327
+msgid ""
+"These plugins are optional, but may be helpful for building advanced block-"
+"based websites."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29350
+msgid "Create Block Theme"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29353
+msgid ""
+"A developer tool for creating block themes and writing site editor changes "
+"to your theme."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29375
+msgid "Custom Post Type UI"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29378
+msgid ""
+"Provides an easy interface for registering and managing custom post types "
+"and taxonomies"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29400
+msgid "Performance Lab"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29403
+msgid "A collection of features focused on enhancing performance of your site."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29422
+msgid "Installing..."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29643
+msgid "Choose how you want your pages and blog posts to be displayed."
+msgstr ""
+
+#: inc/onboarding/build/index.js:29651
+msgid "Page layout options"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29660 inc/onboarding/build/index.js:29754
+msgid "Centered"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29665 inc/onboarding/build/index.js:29759
+msgid "Centered layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29674 inc/onboarding/build/index.js:29768
+msgid "Wide"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29679 inc/onboarding/build/index.js:29773
+msgid "Wide layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29688 inc/onboarding/build/index.js:29782
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29693 inc/onboarding/build/index.js:29787
+msgid "Left sidebar layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29702 inc/onboarding/build/index.js:29796
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29707 inc/onboarding/build/index.js:29801
+msgid "Right sidebar layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29725
+msgid "Use this layout for your blog posts as well"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29745
+msgid "Blog post layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29824
+msgid "Blog layout options"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29833
+msgid "Grid"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29838
+msgid "Grid layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29847
+msgid "List"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29852
+msgid "List layout"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29882
+msgid "Preview of blog page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29882
+msgid "Preview of style guide page"
+msgstr ""
+
+#: inc/onboarding/build/index.js:29994
+msgid ""
+"We've created a curated collection of beautiful typography to help you get "
+"started."
+msgstr ""
+
+#: inc/onboarding/build/index.js:30002
+msgid "Choose your typography style"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30012
+msgid "Style 1"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30014
+msgid "Mona Sans"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30035
+msgid "Style 2"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30037
+msgid "Mona Sans Extended"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30058
+msgid "Style 3"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30060
+msgid "Mona Sans Chunky"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30081
+msgid "Style 4"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30083
+msgid "Mona Sans Narrow"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30104
+msgid "Style 5"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30106
+msgid "DM Sans"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30127
+msgid "Style 6"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30129
+msgid "Big Shoulders"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30150
+msgid "Style 7"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30152
+msgid "Space Grotesk"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30173
+msgid "Style 8"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30175
+msgid "Montagu Slab"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30196
+msgid "Style 9"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30198
+msgid "Fraunces"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30219
+msgid "Style 10"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30221
+msgid "Source Serif 4"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30249
+msgid ""
+"You can change your typography settings later in the Global Styles panel of "
+"the Site Editor."
+msgstr ""
+
+#: inc/onboarding/build/index.js:30336
+msgid "Quick Start Wizard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30338
+msgid ""
+"Welcome to the Ollie Quick Start Wizard. This setup wizard will help you "
+"create pages, customize the styles on your site, and much more."
+msgstr ""
+
+#: inc/onboarding/build/index.js:30344
+msgid "Start Setup Wizard"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30725
+msgid "Welcome to Ollie Pro!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30727
+msgid ""
+"Visit the Ollie Dashboard (Appearance → Ollie) to activate Ollie Pro, use "
+"the setup wizard, and access docs and video tutorials. Head over there to "
+"get started!"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30737
+msgid "View Ollie Dashboard →"
+msgstr ""
+
+#: inc/onboarding/build/index.js:30742
+msgid "Skip for now"
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:56
+msgid "View details"
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
+#: inc/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: inc/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
+#: inc/plugin-update-checker/Puc/v5p5/Vcs/PluginUpdateChecker.php:113
+msgid "There is no changelog available."
+msgstr ""
+
+#: ollie-pro.php:63
+#, php-format
+msgid ""
+"Ollie Pro 2.0 requires Ollie theme version 1.4.8 or higher. Please %s before "
+"continuing."
+msgstr ""
+
+#: ollie-pro.php:64
+msgid "update your theme"
+msgstr ""
+
+#. translators: %s: Link to Ollie theme
+#: ollie-pro.php:84 ollie-pro.php:92
+#, php-format
+msgid ""
+"The Ollie Pro plugin needs the free Ollie theme to work. View the theme and "
+"install it %s."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Ollie Pro"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://olliewp.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Adds the Ollie Pro pattern library and Ollie Pro Dashboard to the Ollie "
+"block theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "buildwithollie"
+msgstr ""

@@ -1,0 +1,174 @@
+/**
+ * Video Modal - Frontend Styles
+ */
+
+/* Video modal trigger styling */
+.ollie-video-modal-trigger {
+	cursor: pointer;
+	position: relative;
+	container-type: inline-size;
+}
+
+/* Buttons can't use container-type: inline-size as it collapses their width */
+.ollie-video-modal-trigger.wp-block-button,
+.ollie-video-modal-trigger.wp-element-button {
+	container-type: normal;
+}
+
+/* Ensure buttons and links inside remain clickable */
+.ollie-video-modal-trigger a,
+.ollie-video-modal-trigger button,
+.ollie-video-modal-trigger .wp-block-button__link {
+	position: relative;
+	z-index: 20;
+	cursor: pointer;
+}
+
+/* Play button overlay - shown for 'always' and 'hover' modes */
+.ollie-video-modal-trigger[data-play-icon="always"]::after,
+.ollie-video-modal-trigger[data-play-icon="hover"]::after {
+	--play-icon-size: 48px;
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: var(--play-icon-size);
+	height: var(--play-icon-size);
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	opacity: 1;
+	transition: opacity 0.2s ease;
+	pointer-events: none;
+	z-index: 10;
+	backdrop-filter: blur(8px);
+	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.53688 5.97801C8.87115 5.55437 8 6.03258 8 6.82167V17.1783C8 17.9674 8.87115 18.4456 9.53688 18.022L17.6742 12.8437C18.2917 12.4507 18.2917 11.5493 17.6742 11.1563L9.53688 5.97801Z' fill='white'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: calc(var(--play-icon-size) * 0.5);
+}
+
+/* Container query: medium icon for containers 400px-600px */
+@container (min-width: 400px) {
+	.ollie-video-modal-trigger[data-play-icon="always"]::after,
+	.ollie-video-modal-trigger[data-play-icon="hover"]::after {
+		--play-icon-size: 64px;
+	}
+}
+
+/* Container query: largest icon for containers above 600px */
+@container (min-width: 600px) {
+	.ollie-video-modal-trigger[data-play-icon="always"]::after,
+	.ollie-video-modal-trigger[data-play-icon="hover"]::after {
+		--play-icon-size: 84px;
+	}
+}
+
+/* Hover-only: hidden by default, shown on hover */
+.ollie-video-modal-trigger[data-play-icon="hover"]::after {
+	opacity: 0;
+}
+
+.ollie-video-modal-trigger[data-play-icon="hover"]:hover::after {
+	opacity: 1;
+}
+
+/* Hide: no play icon */
+.ollie-video-modal-trigger[data-play-icon="hide"]::after {
+	display: none;
+}
+
+/* Video modal overlay */
+.ollie-video-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 999999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ollie-video-modal-overlay.is-open {
+	opacity: 1;
+	visibility: visible;
+	backdrop-filter: blur(30px);
+}
+
+/* Video modal content */
+.ollie-video-modal {
+	position: relative;
+	width: 90%;
+	max-width: 1200px;
+	aspect-ratio: 16 / 9;
+	background: #000;
+	border-radius: 8px;
+	overflow: hidden;
+	transform: scale(0.9);
+	transition: transform 0.3s ease;
+}
+
+.ollie-video-modal-overlay.is-open .ollie-video-modal {
+	transform: scale(1);
+}
+
+/* Close button */
+.ollie-video-modal__close {
+	position: absolute;
+	top: -50px;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 32px;
+	line-height: 1;
+	opacity: 0.8;
+	transition: opacity 0.2s ease;
+	z-index: 10;
+}
+
+.ollie-video-modal__close:hover {
+	opacity: 1;
+}
+
+.ollie-video-modal__close::before {
+	content: '\00d7';
+}
+
+/* Video container */
+.ollie-video-modal__content {
+	width: 100%;
+	height: 100%;
+}
+
+/* Iframe styling */
+.ollie-video-modal iframe,
+.ollie-video-modal video {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.ollie-video-modal {
+		width: 95%;
+		border-radius: 4px;
+	}
+
+	.ollie-video-modal__close {
+		top: -45px;
+		width: 36px;
+		height: 36px;
+		font-size: 28px;
+	}
+}
