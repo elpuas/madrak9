@@ -4,7 +4,8 @@
 **/node_modules/
 
 # Third-party plugins and uploads (managed separately)
-plugins/
+plugins/*
+!plugins/shop-commands/
 uploads/
 .devcontainer/data/
 
