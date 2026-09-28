@@ -16,6 +16,6 @@ The first Ability is:
 - WooCommerce
 
 Shop Commands is currently developed and tested inside the MadraK9 project.
-It defines store capabilities and structured data contracts only. User
-interface and WordPress Command Palette behavior are intentionally handled by
-separate integrations.
+It defines store capabilities and structured data contracts, and exposes
+supported Abilities through a reusable WordPress Command Palette and result
+modal integration.

@@ -1,0 +1,30 @@
+.shop-commands-result-modal__list {
+	margin: 0;
+}
+
+.shop-commands-result-modal__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.shop-commands-result-modal__row:first-child {
+	padding-top: 0;
+}
+
+.shop-commands-result-modal__row dt {
+	font-weight: 600;
+}
+
+.shop-commands-result-modal__row dd {
+	margin: 0;
+	font-variant-numeric: tabular-nums;
+}
+
+.shop-commands-result-modal__footer {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+}

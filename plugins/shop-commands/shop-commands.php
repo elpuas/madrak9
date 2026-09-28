@@ -19,6 +19,8 @@ namespace ShopCommands;
 defined( 'ABSPATH' ) || exit;
 
 require_once __DIR__ . '/src/class-orders-needing-attention.php';
+require_once __DIR__ . '/src/class-command-palette.php';
 
 add_action( 'wp_abilities_api_categories_init', [ Orders_Needing_Attention::class, 'register_category' ] );
 add_action( 'wp_abilities_api_init', [ Orders_Needing_Attention::class, 'register_ability' ] );
+add_action( 'admin_enqueue_scripts', [ Command_Palette::class, 'enqueue_assets' ] );

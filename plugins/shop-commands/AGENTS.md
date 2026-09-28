@@ -8,8 +8,9 @@ through the WordPress Abilities API.
 The goal is to reduce the number of admin screens a Shop Manager needs to
 navigate for common day-to-day tasks.
 
-Shop Commands defines store capabilities. It does not own the UI used to
-discover or display them.
+Shop Commands is standalone. It defines store capabilities and owns the
+Command Palette integration used to discover, execute, and display supported
+Abilities.
 
 ## Architecture
 
@@ -17,8 +18,8 @@ Keep these responsibilities separate:
 
 Shop Commands
 → WordPress Abilities API
-→ Ability Palette
 → WordPress Command Palette
+→ reusable Shop Commands result modal
 
 ### Shop Commands owns
 
@@ -27,17 +28,10 @@ Shop Commands
 - Input and output schemas
 - Permission checks
 - WooCommerce data retrieval
-
-### Ability Palette owns
-
-- Ability discovery
-- Command Palette registration
-- Ability execution UI
-- Generic input UI
-- Generic result rendering
-- Notices and feedback
-
-Do not duplicate Ability Palette functionality in this plugin.
+- Command Palette registration for supported Abilities
+- client-side Ability execution
+- generic schema-driven result rendering
+- WordPress-native modal feedback
 
 ## Current Scope
 
@@ -82,7 +76,7 @@ Each Ability should:
 
 Do not design an Ability specifically around the Command Palette UI.
 
-An Ability should remain useful independently of Ability Palette.
+An Ability should remain useful independently of the Shop Commands UI.
 
 ## Ability Naming
 
@@ -117,7 +111,7 @@ Use schema titles and descriptions when they improve generic presentation.
 
 Do not return HTML for presentation.
 
-Do not couple output to Ability Palette's modal implementation.
+Do not couple output to the Shop Commands modal implementation.
 
 When useful, an Ability may return a URL that lets a consumer navigate to the
 corresponding WooCommerce admin screen.
@@ -186,7 +180,7 @@ Prefer simple WordPress/PHP code over framework-like architecture.
 
 ## Verification
 
-Every Ability must be verified independently from Ability Palette first.
+Every Ability must be verified independently from the Command Palette first.
 
 At minimum verify:
 
@@ -200,8 +194,8 @@ At minimum verify:
 
 Use the workspace Ability verification/audit Skills where applicable.
 
-After the Ability works independently, it may be tested through Ability Palette
-and the Command Palette.
+After the Ability works independently, it may be tested through the Shop
+Commands Command Palette integration.
 
 Do not treat Command Palette behavior as proof that the underlying Ability is
 correct.
