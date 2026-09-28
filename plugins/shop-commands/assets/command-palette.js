@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved -- WordPress resolves these public script modules at runtime. */
 /* eslint-disable prettier/prettier -- Project JavaScript style omits semicolons. */
 
-import { executeAbility, getAbility } from '@wordpress/abilities'
+import { executeAbility, getAbilities } from '@wordpress/abilities'
 import { ready as abilitiesReady } from '@wordpress/core-abilities'
 
 const { Button, Modal, Notice } = window.wp.components
@@ -9,7 +9,14 @@ const { createElement, createRoot, Fragment, useEffect, useState } = window.wp.e
 const { __ } = window.wp.i18n
 const { useCommand } = window.wp.commands
 
-const PALETTE_ABILITIES = [ 'shop-commands/orders-needing-attention' ]
+const isPaletteAbility = ( ability ) =>
+	ability.name.startsWith( 'shop-commands/' ) &&
+	ability.category === 'shop-commands' &&
+	ability.meta?.annotations?.serverRegistered === true &&
+	ability.meta?.annotations?.readonly === true &&
+	ability.meta?.annotations?.destructive === false &&
+	ability.output_schema?.type === 'object' &&
+	Object.keys( ability.input_schema ?? {} ).length === 0
 
 const humanizeKey = ( key ) => {
 	const words = key.replaceAll( '_', ' ' )
@@ -110,28 +117,11 @@ const ResultModal = ( { state, onClose } ) => {
 	)
 }
 
-const AbilityCommand = ( { abilityName, onResult } ) => {
-	const [ ability, setAbility ] = useState( null )
-
-	useEffect( () => {
-		let isMounted = true
-
-		abilitiesReady.then( () => {
-			if ( isMounted ) {
-				setAbility( getAbility( abilityName ) ?? null )
-			}
-		} )
-
-		return () => {
-			isMounted = false
-		}
-	}, [ abilityName ] )
-
+const AbilityCommand = ( { ability, onResult } ) => {
 	useCommand( {
-		name: abilityName,
-		label: ability?.label ?? abilityName,
+		name: ability.name,
+		label: ability.label,
 		category: 'action',
-		disabled: ! ability,
 		callback: async ( { close } ) => {
 			try {
 				const result = await executeAbility( ability.name )
@@ -149,7 +139,23 @@ const AbilityCommand = ( { abilityName, onResult } ) => {
 }
 
 const CommandPaletteApp = () => {
+	const [ abilities, setAbilities ] = useState( [] )
 	const [ modalState, setModalState ] = useState( null )
+
+	useEffect( () => {
+		let isMounted = true
+
+		abilitiesReady.then( () => {
+			if ( isMounted ) {
+				setAbilities( getAbilities( { category: 'shop-commands' } ).filter( isPaletteAbility ) )
+			}
+		} )
+
+		return () => {
+			isMounted = false
+		}
+	}, [] )
+
 	const closeModal = () => {
 		setModalState( null )
 		window.requestAnimationFrame( () => {
@@ -162,10 +168,10 @@ const CommandPaletteApp = () => {
 	return createElement(
 		Fragment,
 		null,
-		...PALETTE_ABILITIES.map( ( abilityName ) =>
+		...abilities.map( ( ability ) =>
 			createElement( AbilityCommand, {
-				abilityName,
-				key: abilityName,
+				ability,
+				key: ability.name,
 				onResult: setModalState,
 			} )
 		),
