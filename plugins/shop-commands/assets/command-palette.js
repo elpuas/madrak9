@@ -35,15 +35,31 @@ const formatValue = ( value ) => {
 			: __( 'No', 'shop-commands' )
 	}
 
-	if ( typeof value === 'object' ) {
-		return JSON.stringify( value )
-	}
-
 	return String( value )
 }
 
-const ResultRows = ( { ability, result } ) => {
-	const properties = ability.output_schema?.properties ?? {}
+const renderValue = ( value, schema ) => {
+	if ( Array.isArray( value ) ) {
+		return value.length === 0
+			? __( 'None', 'shop-commands' )
+			: createElement(
+				'ol',
+				{ className: 'shop-commands-result-modal__items' },
+				value.map( ( item, index ) =>
+					createElement( 'li', { key: index }, renderValue( item, schema.items ?? {} ) )
+				)
+			)
+	}
+
+	if ( value !== null && typeof value === 'object' ) {
+		return createElement( ResultRows, { result: value, schema } )
+	}
+
+	return formatValue( value )
+}
+
+const ResultRows = ( { result, schema } ) => {
+	const properties = schema?.properties ?? {}
 
 	return createElement(
 		'dl',
@@ -51,11 +67,14 @@ const ResultRows = ( { ability, result } ) => {
 		Object.entries( result ).map( ( [ key, value ] ) => {
 			const propertySchema = properties[ key ] ?? {}
 			const label = propertySchema.title ?? humanizeKey( key )
+			const isNested = value !== null && typeof value === 'object'
 
 			return createElement(
 				'div',
 				{
-					className: 'shop-commands-result-modal__row',
+					className: isNested
+						? 'shop-commands-result-modal__row shop-commands-result-modal__row--nested'
+						: 'shop-commands-result-modal__row',
 					key,
 				},
 				createElement(
@@ -70,7 +89,7 @@ const ResultRows = ( { ability, result } ) => {
 						)
 						: null
 				),
-				createElement( 'dd', null, formatValue( value ) )
+				createElement( 'dd', null, renderValue( value, propertySchema ) )
 			)
 		} )
 	)
@@ -101,7 +120,7 @@ const ResultModal = ( { state, onClose } ) => {
 				},
 				error.message || __( 'The Ability could not be executed.', 'shop-commands' )
 			)
-			: createElement( ResultRows, { ability, result } ),
+			: createElement( ResultRows, { result, schema: ability.output_schema } ),
 		createElement(
 			'div',
 			{ className: 'shop-commands-result-modal__footer' },

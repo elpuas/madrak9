@@ -10,6 +10,10 @@
 	border-bottom: 1px solid #ddd;
 }
 
+.shop-commands-result-modal__row--nested {
+	display: block;
+}
+
 .shop-commands-result-modal__row:first-child {
 	padding-top: 0;
 }
@@ -21,6 +25,26 @@
 .shop-commands-result-modal__row dd {
 	margin: 0;
 	font-variant-numeric: tabular-nums;
+}
+
+.shop-commands-result-modal__row--nested > dd {
+	margin-top: 0.5rem;
+}
+
+.shop-commands-result-modal__items {
+	margin: 0;
+	padding-left: 1.5rem;
+}
+
+.shop-commands-result-modal__items > li {
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.shop-commands-result-modal__items > li:last-child,
+.shop-commands-result-modal__items .shop-commands-result-modal__row:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
 }
 
 .shop-commands-result-modal__footer {
