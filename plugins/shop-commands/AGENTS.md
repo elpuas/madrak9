@@ -180,6 +180,12 @@ Prefer simple WordPress/PHP code over framework-like architecture.
 
 ## Verification
 
+Do not run repository-wide PHPStan, lint, test, or analysis suites for Shop
+Commands unless explicitly requested. Prefer validation scoped to
+`plugins/shop-commands`. If scoped PHPStan cannot meaningfully load the
+WordPress/WooCommerce environment, report that limitation rather than expanding
+analysis to unrelated project code.
+
 Every Ability must be verified independently from the Command Palette first.
 
 At minimum verify:

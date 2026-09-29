@@ -1,13 +1,37 @@
 /* eslint-disable import/no-unresolved -- WordPress resolves these public script modules at runtime. */
 /* eslint-disable prettier/prettier -- Project JavaScript style omits semicolons. */
 
-import { executeAbility, getAbilities } from '@wordpress/abilities'
+import { executeAbility, getAbilities, validateValueFromSchema } from '@wordpress/abilities'
 import { ready as abilitiesReady } from '@wordpress/core-abilities'
 
-const { Button, Modal, Notice } = window.wp.components
+const { Button, Modal, Notice, TextControl } = window.wp.components
 const { createElement, createRoot, Fragment, useEffect, useState } = window.wp.element
 const { __ } = window.wp.i18n
 const { useCommand } = window.wp.commands
+
+const getInputField = ( ability ) => {
+	const schema = ability.input_schema
+	const allowedRootKeys = [ 'type', 'properties', 'required', 'additionalProperties', 'title', 'description' ]
+	const allowedFieldKeys = [ 'type', 'title', 'description', 'minLength', 'maxLength', 'pattern' ]
+
+	if ( ! schema || schema.type !== 'object' || schema.additionalProperties !== false ) {
+		return null
+	}
+
+	const fields = Object.entries( schema.properties ?? {} )
+	if (
+		fields.length !== 1 ||
+		schema.required?.length !== 1 ||
+		schema.required[ 0 ] !== fields[ 0 ][ 0 ] ||
+		fields[ 0 ][ 1 ].type !== 'string' ||
+		Object.keys( schema ).some( ( key ) => ! allowedRootKeys.includes( key ) ) ||
+		Object.keys( fields[ 0 ][ 1 ] ).some( ( key ) => ! allowedFieldKeys.includes( key ) )
+	) {
+		return null
+	}
+
+	return { name: fields[ 0 ][ 0 ], schema: fields[ 0 ][ 1 ] }
+}
 
 const isPaletteAbility = ( ability ) =>
 	ability.name.startsWith( 'shop-commands/' ) &&
@@ -16,7 +40,7 @@ const isPaletteAbility = ( ability ) =>
 	ability.meta?.annotations?.readonly === true &&
 	ability.meta?.annotations?.destructive === false &&
 	ability.output_schema?.type === 'object' &&
-	Object.keys( ability.input_schema ?? {} ).length === 0
+	( Object.keys( ability.input_schema ?? {} ).length === 0 || getInputField( ability ) !== null )
 
 const humanizeKey = ( key ) => {
 	const words = key.replaceAll( '_', ' ' )
@@ -136,12 +160,87 @@ const ResultModal = ( { state, onClose } ) => {
 	)
 }
 
-const AbilityCommand = ( { ability, onResult } ) => {
+const InputModal = ( { ability, onClose, onResult } ) => {
+	const field = getInputField( ability )
+	const [ value, setValue ] = useState( '' )
+	const [ error, setError ] = useState( '' )
+	const [ isSubmitting, setIsSubmitting ] = useState( false )
+
+	const submit = async ( event ) => {
+		event.preventDefault()
+
+		const input = { [ field.name ]: value.trim() }
+		const validation = validateValueFromSchema( input, ability.input_schema, 'input' )
+		if ( validation !== true ) {
+			setError( validation )
+			return
+		}
+
+		setIsSubmitting( true )
+		try {
+			const result = await executeAbility( ability.name, input )
+			onResult( { ability, result } )
+		} catch ( executionError ) {
+			onResult( { ability, error: executionError } )
+		}
+	}
+
+	return createElement(
+		Modal,
+		{
+			className: 'shop-commands-input-modal',
+			onRequestClose: onClose,
+			size: 'small',
+			title: ability.label,
+		},
+		createElement(
+			'form',
+			{ onSubmit: submit },
+			createElement( TextControl, {
+				'aria-errormessage': error ? 'shop-commands-input-error' : undefined,
+				'aria-invalid': Boolean( error ),
+				autoFocus: true,
+				help: field.schema.description,
+				label: field.schema.title ?? humanizeKey( field.name ),
+				onChange: ( nextValue ) => {
+					setValue( nextValue )
+					setError( '' )
+				},
+				required: true,
+				value,
+			} ),
+			error
+				? createElement(
+					'div',
+					{ id: 'shop-commands-input-error', role: 'alert' },
+					createElement( Notice, { isDismissible: false, status: 'error' }, error )
+				)
+				: null,
+			createElement(
+				'div',
+				{ className: 'shop-commands-result-modal__footer' },
+				createElement(
+					Button,
+					{ disabled: isSubmitting, isBusy: isSubmitting, type: 'submit', variant: 'primary' },
+					ability.label
+				)
+			)
+		)
+	)
+}
+
+const AbilityCommand = ( { ability, onInput, onResult } ) => {
 	useCommand( {
 		name: ability.name,
 		label: ability.label,
 		category: 'action',
 		callback: async ( { close } ) => {
+			if ( getInputField( ability ) ) {
+				close()
+				onInput( ability )
+				return
+			}
+
 			try {
 				const result = await executeAbility( ability.name )
 
@@ -159,6 +258,7 @@ const AbilityCommand = ( { ability, onResult } ) => {
 
 const CommandPaletteApp = () => {
 	const [ abilities, setAbilities ] = useState( [] )
+	const [ inputAbility, setInputAbility ] = useState( null )
 	const [ modalState, setModalState ] = useState( null )
 
 	useEffect( () => {
@@ -176,6 +276,7 @@ const CommandPaletteApp = () => {
 	}, [] )
 
 	const closeModal = () => {
+		setInputAbility( null )
 		setModalState( null )
 		window.requestAnimationFrame( () => {
 			document
@@ -191,9 +292,21 @@ const CommandPaletteApp = () => {
 			createElement( AbilityCommand, {
 				ability,
 				key: ability.name,
+				onInput: setInputAbility,
 				onResult: setModalState,
 			} )
 		),
+		inputAbility
+			? createElement( InputModal, {
+				ability: inputAbility,
+				key: inputAbility.name,
+				onClose: closeModal,
+				onResult: ( result ) => {
+					setInputAbility( null )
+					setModalState( result )
+				},
+			} )
+			: null,
 		createElement( ResultModal, {
 			onClose: closeModal,
 			state: modalState,
