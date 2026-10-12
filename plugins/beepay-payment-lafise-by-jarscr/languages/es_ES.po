@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Beepay by JARSCR Payment Gateway 1.2.7\n"
+"Report-Msgid-Bugs-To: http://www.jarscr.com\n"
+"POT-Creation-Date: 2024-01-01 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-01-01 12:00+0100\n"
+"Last-Translator: Alfredo Rodriguez <arodriguez@jarscr.com>\n"
+"Language-Team: Spanish <info@jarscr.com>\n"
+"X-Generator: Poedit 1.5.7\n"
+"Language: es_ES\n"
+
+#: beepay.php:157
+msgid "Bac/Fac Credomatic"
+msgstr "Bac/Fac Credomatic"
+
+#: beepay.php:158
+msgid "Pago en linea por medio de el Bac/Fac Credomatic"
+msgstr "Pago en linea por medio de el Bac/Fac Credomatic"
+
+#: beepay.php:100
+msgid "Activar/Desactivar"
+msgstr "Activar/Desactivar"
+
+#: beepay.php:102
+msgid "Activar modulo del Bac Credomatic."
+msgstr "Activar modulo del Bac Credomatic."
+
+#: beepay.php:105
+msgid "Titulo:"
+msgstr "Título:"
+
+#: beepay.php:107
+msgid "Ingrese el nombre que desea vean sus clientes."
+msgstr "Ingrese el nombre que desea vean sus clientes."
+
+#: beepay.php:108
+msgid "Tarjeta de Crédito/Débito"
+msgstr "Tarjeta de Crédito/Débito"
+
+#: beepay.php:110
+msgid "Descripción:"
+msgstr "Descripción:"
+
+#: beepay.php:112
+msgid "Mensaje que se muestra mientras se raliza el Pago"
+msgstr "Mensaje que se muestra mientras se realiza el Pago"
+
+#: beepay.php:113
+msgid "Pago seguro con el Bac Credomatic."
+msgstr "Pago seguro con el Bac Credomatic."
+
+#: beepay.php:115
+msgid "Terminal Contado:"
+msgstr "Terminal Contado:"
+
+#: beepay.php:117
+msgid "Ingrese su terminal Contado."
+msgstr "Ingrese su terminal Contado."
+
+#: beepay.php:119
+msgid "Contraseña Terminal Contado Contraseña:"
+msgstr "Contraseña Terminal Contado:"
+
+#: beepay.php:121
+msgid "Ingrese la contraseña del terminal  de Contado."
+msgstr "Ingrese la contraseña del terminal de Contado."
+
+#: beepay.php:123
+msgid "URL de Retorno"
+msgstr "URL de Retorno"
+
+#: beepay.php:125
+msgid "Ingrese el URL de retorno para WooCommerce"
+msgstr "Ingrese el URL de retorno para WooCommerce"
+
+#: beepay.php:126
+msgid "/checkout/order-received/"
+msgstr "/checkout/order-received/"
+
+#: beepay.php:128
+msgid "Mensaje de Pago Exitoso"
+msgstr "Mensaje de Pago Exitoso"
+
+#: beepay.php:130
+msgid "Ingrese el mensaje que se muestra al realizarse un pago exitoso."
+msgstr "Ingrese el mensaje que se muestra al realizarse un pago exitoso."
+
+#: beepay.php:131
+msgid "Su pago se ha realizado exitosamente"
+msgstr "Su pago se ha realizado exitosamente"
+
+#: beepay.php:133
+msgid "Mensaje de Pago Fallido"
+msgstr "Mensaje de Pago Fallido"
+
+#: beepay.php:135
+msgid "Ingrese el mensaje que se muestra al realizase un pago fallido."
+msgstr "Ingrese el mensaje que se muestra al realizarse un pago fallido."
+
+#: beepay.php:136
+msgid "Su transacción ha presentado problemas."
+msgstr "Su transacción ha presentado problemas."
+
+#: beepay.php:138
+msgid "Modo WooCommerce Clasic"
+msgstr "Modo WooCommerce Classic"
+
+#: beepay.php:140
+msgid "Esta opción permite usar el plugin en modo Classic o Blocks de WooCommerce, por defecto es Blocks."
+msgstr "Esta opción permite usar el plugin en modo Classic o Blocks de WooCommerce, por defecto es Blocks."
+
+#: beepay.php:141
+msgid "Activar modo Classic"
+msgstr "Activar modo Classic"
+
+#: beepay.php:144
+msgid "Desarrollo"
+msgstr "Desarrollo"
+
+#: beepay.php:146
+msgid "Activar modo Desarrollo"
+msgstr "Activar modo Desarrollo"
+
+#: beepay.php:304
+msgid "Thanks for you order. Please Wait."
+msgstr "Gracias por su orden. Por favor espere."
+
+#: beepay.php:484
+msgid "Cancelar orden &amp; limpiar el carrito"
+msgstr "Cancelar orden &amp; limpiar el carrito"
+
+#: beepay.php:485
+msgid "Realizar Pago"
+msgstr "Realizar Pago"
+
+#: beepay.php:486
+msgid "Espere por favor…"
+msgstr "Espere por favor…"
+
+#: beepay.php:487
+msgid "Espere por favor."
+msgstr "Espere por favor."
+
+#: beepay.php:53
+msgid "Procesa pago en linea con Beepay."
+msgstr "Procesa pago en línea con Beepay."
+
+#: beepay.php:61
+msgid "Beepay by JARSCR"
+msgstr "Beepay by JARSCR"
