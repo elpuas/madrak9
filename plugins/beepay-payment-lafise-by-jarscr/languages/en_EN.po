@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Beepay by JARSCR Payment Gateway 1.2.7\n"
+"Report-Msgid-Bugs-To: http://www.jarscr.com\n"
+"POT-Creation-Date: 2024-01-01 12:00:00+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2024-01-01 12:00+0100\n"
+"Last-Translator: Alfredo Rodriguez <arodriguez@jarscr.com>\n"
+"Language-Team: English <info@jarscr.com>\n"
+"X-Generator: Poedit 1.5.7\n"
+"Language: en_EN\n"
+
+#: beepay.php:157
+msgid "Bac/Fac Credomatic"
+msgstr "Bac/Fac Credomatic"
+
+#: beepay.php:158
+msgid "Pago en linea por medio de el Bac/Fac Credomatic"
+msgstr "Online payment through Bac/Fac Credomatic"
+
+#: beepay.php:100
+msgid "Activar/Desactivar"
+msgstr "Enable/Disable"
+
+#: beepay.php:102
+msgid "Activar modulo del Bac Credomatic."
+msgstr "Enable Bac Credomatic module."
+
+#: beepay.php:105
+msgid "Titulo:"
+msgstr "Title:"
+
+#: beepay.php:107
+msgid "Ingrese el nombre que desea vean sus clientes."
+msgstr "Enter the name you want your customers to see."
+
+#: beepay.php:108
+msgid "Tarjeta de Crédito/Débito"
+msgstr "Credit/Debit Card"
+
+#: beepay.php:110
+msgid "Descripción:"
+msgstr "Description:"
+
+#: beepay.php:112
+msgid "Mensaje que se muestra mientras se raliza el Pago"
+msgstr "Message shown while payment is being processed"
+
+#: beepay.php:113
+msgid "Pago seguro con el Bac Credomatic."
+msgstr "Secure payment with Bac Credomatic."
+
+#: beepay.php:115
+msgid "Terminal Contado:"
+msgstr "Cash Terminal:"
+
+#: beepay.php:117
+msgid "Ingrese su terminal Contado."
+msgstr "Enter your cash terminal."
+
+#: beepay.php:119
+msgid "Contraseña Terminal Contado Contraseña:"
+msgstr "Cash Terminal Password:"
+
+#: beepay.php:121
+msgid "Ingrese la contraseña del terminal  de Contado."
+msgstr "Enter the cash terminal password."
+
+#: beepay.php:123
+msgid "URL de Retorno"
+msgstr "Return URL"
+
+#: beepay.php:125
+msgid "Ingrese el URL de retorno para WooCommerce"
+msgstr "Enter the return URL for WooCommerce"
+
+#: beepay.php:126
+msgid "/checkout/order-received/"
+msgstr "/checkout/order-received/"
+
+#: beepay.php:128
+msgid "Mensaje de Pago Exitoso"
+msgstr "Successful Payment Message"
+
+#: beepay.php:130
+msgid "Ingrese el mensaje que se muestra al realizarse un pago exitoso."
+msgstr "Enter the message shown when a payment is successful."
+
+#: beepay.php:131
+msgid "Su pago se ha realizado exitosamente"
+msgstr "Your payment has been processed successfully"
+
+#: beepay.php:133
+msgid "Mensaje de Pago Fallido"
+msgstr "Failed Payment Message"
+
+#: beepay.php:135
+msgid "Ingrese el mensaje que se muestra al realizase un pago fallido."
+msgstr "Enter the message shown when a payment fails."
+
+#: beepay.php:136
+msgid "Su transacción ha presentado problemas."
+msgstr "Your transaction has encountered problems."
+
+#: beepay.php:138
+msgid "Modo WooCommerce Clasic"
+msgstr "WooCommerce Classic Mode"
+
+#: beepay.php:140
+msgid "Esta opción permite usar el plugin en modo Classic o Blocks de WooCommerce, por defecto es Blocks."
+msgstr "This option allows using the plugin in Classic or Blocks mode of WooCommerce, default is Blocks."
+
+#: beepay.php:141
+msgid "Activar modo Classic"
+msgstr "Enable Classic mode"
+
+#: beepay.php:144
+msgid "Desarrollo"
+msgstr "Development"
+
+#: beepay.php:146
+msgid "Activar modo Desarrollo"
+msgstr "Enable Development mode"
+
+#: beepay.php:304
+msgid "Thanks for you order. Please Wait."
+msgstr "Thanks for your order. Please wait."
+
+#: beepay.php:484
+msgid "Cancelar orden &amp; limpiar el carrito"
+msgstr "Cancel order &amp; clear cart"
+
+#: beepay.php:485
+msgid "Realizar Pago"
+msgstr "Make Payment"
+
+#: beepay.php:486
+msgid "Espere por favor…"
+msgstr "Please wait…"
+
+#: beepay.php:487
+msgid "Espere por favor."
+msgstr "Please wait."
+
+#: beepay.php:53
+msgid "Procesa pago en linea con Beepay."
+msgstr "Process online payment with Beepay."
+
+#: beepay.php:61
+msgid "Beepay by JARSCR"
+msgstr "Beepay by JARSCR"

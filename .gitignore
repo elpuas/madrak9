@@ -4,7 +4,9 @@
 **/node_modules/
 
 # Third-party plugins and uploads (managed separately)
-plugins/
+plugins/*
+!plugins/beepay-payment-lafise-by-jarscr/
+!plugins/beepay-payment-lafise-by-jarscr/**
 uploads/
 .devcontainer/data/
 
