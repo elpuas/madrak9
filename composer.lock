@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dd7f6e87787d99fb144174001a905a5",
+	"content-hash": "55c26af3d789a7f54bf7b69fa5d58942",
     "packages": [
         {
             "name": "composer/installers",
@@ -188,6 +188,24 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/create-block-theme/"
         },
+		{
+			"name": "wpackagist-plugin/icon-block",
+			"version": "2.1.0",
+			"source": {
+				"type": "svn",
+				"url": "https://plugins.svn.wordpress.org/icon-block/",
+				"reference": "tags/2.1.0"
+			},
+			"dist": {
+				"type": "zip",
+				"url": "https://downloads.wordpress.org/plugin/icon-block.2.1.0.zip"
+			},
+			"require": {
+				"composer/installers": "^1.0 || ^2.0"
+			},
+			"type": "wordpress-plugin",
+			"homepage": "https://wordpress.org/plugins/icon-block/"
+		},
         {
             "name": "wpackagist-plugin/performance-lab",
             "version": "4.2.0",
